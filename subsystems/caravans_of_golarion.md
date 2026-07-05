@@ -805,9 +805,9 @@ that the local market cannot normally support.
 - Owner: Narin Alveri
 - Terms: 20% prepaid; 5 gp + 5% courier delivery in `[[/gmroll 1d4+1]]` days
 - Applicable Perks at 6th Level: `Reliable Teamsters`, `Warehouse Ties`,
-  `Veteran Escort`
+  `Veteran Escort`, `Caravan Festival`
 - Applicable Perks at 7th Level: `Reliable Teamsters`, `Warehouse Ties`,
-  `Veteran Escort`, `Regional Trade Network`
+  `Veteran Escort`, `Regional Trade Network`, `Caravan Festival`
 
 When this caravan arrives in Otari on its regular circuit, use the following
 6th-level state.
@@ -829,6 +829,11 @@ run, use the following 7th-level state.
 
 This is the natural caravan to handle expensive commissions, high-end imports,
 and mediated orders beyond what Otari can normally support on its own.
+
+The circuit also keeps a modest public-facing rhythm. She brings regular food
+stalls and, when the route and pay scale make it worthwhile, simple
+entertainment such as musicians or clowns, especially for rural stops where
+performers accept a lower fee in exchange for steady work.
 
 ### Tawen Keefrow's Meravon Caravan
 
