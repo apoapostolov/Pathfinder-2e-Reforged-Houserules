@@ -2,7 +2,7 @@
 
 # Exploration Actions
 
-### Assess Value / Negotiate
+### Assess Value or Negotiate
 
 [CONCENTRATE] [EXPLORATION] **[SECRET]**
 You examine an item for 1 minute, usually when negotiating with a trader to

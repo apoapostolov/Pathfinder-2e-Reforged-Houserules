@@ -1,406 +1,650 @@
-ChatGPT
+<!-- markdownlint-disable MD013 -->
 
+# Caravan Trade Subsystem
 
+This subsystem models caravans as recurring mobile businesses rather than as
+static merchants. It is intended for GM use. Players should usually see only
+the results: what a caravan has for sale, how much coin it can spend, what
+goods are in demand, and whether a familiar caravan has prospered or fallen on
+hard times since the last time the party met it.
 
+This subsystem serves four purposes.
 
+- It determines how much coin a caravan can spend when the PCs want to sell.
+- It determines what kinds of supplies and items a caravan currently offers.
+- It gives the GM a simple way to resolve off-screen trade journeys.
+- It allows recurring caravans to grow, suffer losses, and feel like part of a
+  living world.
 
+Use [Assess Value or Negotiate](../rules/06-exploration-actions.md) whenever
+the PCs haggle over prices. This subsystem does not replace that activity; it
+supplies the business logic behind it.
 
+## Using This Subsystem
 
+The subsystem is intentionally abstract. Do not track individual crates,
+inventory manifests, or pack animals unless they are story-relevant.
 
+For most caravans, the GM only needs to record the following.
 
+- Name
+- Level
+- Profile
+- Mercantile Lore
+- Trade DC
+- Current Working Capital
+- Current Stock Pools
+- Invested Cargo
+- Caravan XP
 
+When a caravan first appears, or after it completes a trade journey, follow
+this procedure.
 
+1. Choose the caravan's level and profile.
+2. Note its base statistics from the Caravan Progression table.
+3. Roll for its current liquidity to determine its current Working Capital.
+4. Adjust its stock pools for its profile.
+5. If it is a recurring caravan, also note any active route, debts, losses, or
+   recent successes that matter.
 
+## Caravan Statistics
 
-
-
-
-
-
-
-
-
-
-
-Here's how I would structure it as a single subsystem chapter. I would deliberately keep Assess Value/Negotiate as its own exploration action and have the caravan rules reference it rather than duplicate it. That way, if you later tweak negotiation percentages, every merchant—not just caravans—updates automatically.
-
-Caravan Trading System
-Overview
-Caravans are mobile businesses that travel between settlements purchasing goods, transporting cargo, and reselling it elsewhere. Unlike ordinary merchants, caravans possess their own wealth, experience, trade expertise, and business growth. Over time, successful caravans become wealthier, establish wider trade networks, and gain access to larger markets.
-
-The caravan system serves two purposes:
-
-It determines how much wealth a caravan has available to purchase goods from the PCs.
-
-It simulates the caravan's continued business after leaving, allowing recurring caravans to grow naturally through successful trade.
-
-Caravan Statistics
 Every caravan has the following statistics.
 
-Statistic	Description
-Level	Overall business size, reputation and logistical capability.
-Mercantile Lore	Skill modifier used for trade negotiations and commercial decisions.
-Trade DC	10 + Mercantile Lore modifier. Used whenever the caravan resists haggling.
-Liquid Gold	Coins immediately available for purchasing goods.
-Caravan XP	Experience gained from successful trade expeditions.
-Caravan Level Progression
-Level	Mercantile Lore	Trade DC	Liquid Gold
-3	+10	20	/r 280+(10d10-55)
-4	+12	22	/r 420+(12d10-66)
-5	+14	24	/r 700+(16d10-88)
-6	+16	26	/r 900+(18d10-99)
-7	+18	28	/r 1120+(20d10-110)
-8	+20	30	/r 1600+(24d10-132)
-9	+22	32	/r 2400+(30d10-165)
-10	+24	34	/r 3600+(36d10-198)
-Roll Liquid Gold whenever the caravan first appears or after it has completed a trade expedition.
+| Statistic | Description |
+| --- | --- |
+| Level | Overall business size, reputation, logistics, and commercial reach. |
+| Profile | The caravan's trade identity, such as provisioner, outfitter, or luxury broker. |
+| Mercantile Lore | Skill modifier used for trade checks, market analysis, and commercial decisions. |
+| Trade DC | Equal to 10 + Mercantile Lore. Use this when the caravan haggles as an organized business. |
+| Working Capital | Coinage, letters of credit, and readily available assets the caravan can presently use to buy goods. This does not represent the caravan's total wealth, wagons, warehouses, or existing cargo. |
+| Provision Stock | The value of common travel staples the caravan currently has available for sale. |
+| General Stock | The value of ordinary common goods the caravan currently has available for sale. |
+| Specialty Stock | The value of goods tied to the caravan's profile. |
+| Invested Cargo | The value of goods the caravan has already purchased and is carrying for resale. |
+| Caravan XP | Experience earned through completed trade journeys. |
+
+## Caravan Progression
+
+This subsystem assumes that caravans important enough to matter in play begin
+at 3rd level. Smaller peddlers, isolated drovers, and one-wagon traders usually
+work better as ordinary merchants without subsystem tracking.
+
+| Level | Mercantile Lore | Trade DC | Base Working Capital | Provision Stock | General Stock | Specialty Stock |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| 3 | +10 | 20 | 280 gp | 40 gp | 80 gp | 40 gp |
+| 4 | +12 | 22 | 420 gp | 60 gp | 120 gp | 60 gp |
+| 5 | +14 | 24 | 700 gp | 100 gp | 180 gp | 120 gp |
+| 6 | +16 | 26 | 900 gp | 120 gp | 260 gp | 160 gp |
+| 7 | +18 | 28 | 1,120 gp | 160 gp | 360 gp | 240 gp |
+| 8 | +20 | 30 | 1,600 gp | 220 gp | 500 gp | 320 gp |
+| 9 | +22 | 32 | 2,400 gp | 320 gp | 700 gp | 480 gp |
+| 10 | +24 | 34 | 3,600 gp | 450 gp | 1,000 gp | 700 gp |
+
+These numbers represent a healthy baseline, not a promise. A caravan that was
+raided last week, recently made a major investment, or is flush with coin from
+a spectacular run can vary significantly.
+
+## Current Liquidity
+
+When a caravan first appears in play, or after it completes a trade journey,
+roll 1d6 and apply the result to its Base Working Capital.
+
+| d6 | Liquidity | Working Capital |
+| --- | --- | ---: |
+| 1 | Depleted | 70% of base |
+| 2 | Lean | 85% of base |
+| 3-4 | Normal | 100% of base |
+| 5 | Flush | 115% of base |
+| 6 | Exceptionally Flush | 130% of base |
 
-Liquid Gold represents immediately available coinage. It does not represent the caravan's total assets, wagons, merchandise, credit, or property.
+Round the final amount to the nearest 5 gp.
 
-Purchasing Goods
-Caravans purchase items using the Assess Value / Negotiate exploration activity.
+Liquidity changes how much coin the caravan can spend right now. It does not
+change its level, routes, or total assets.
 
-Friendly caravans generally negotiate using the item's Level DC.
+### VTT Working Capital Table
 
-Professional caravans, merchant houses, guild factors, and organized businesses usually haggle using their Trade DC instead.
+If you use a VTT and want a single roll formula for a caravan's available funds
+ on arrival, use the following table instead of the liquidity table above.
 
-If the caravan cannot afford the negotiated price, it simply cannot purchase the item.
+These formulas intentionally produce a spread around the same baseline values
+used by this subsystem while keeping results easy to roll in Foundry or a
+similar VTT.
 
-Caravan Cargo
-After purchasing goods, record only the amount of gold invested.
+| Level | VTT Working Capital Formula |
+| --- | --- |
+| 3 | `/r 280 + (10d10 - 55)` |
+| 4 | `/r 420 + (12d10 - 66)` |
+| 5 | `/r 700 + (16d10 - 88)` |
+| 6 | `/r 900 + (18d10 - 99)` |
+| 7 | `/r 1120 + (20d10 - 110)` |
+| 8 | `/r 1600 + (24d10 - 132)` |
+| 9 | `/r 2400 + (30d10 - 165)` |
+| 10 | `/r 3600 + (36d10 - 198)` |
 
-Do not track individual crates or inventories unless they are story-important.
+Use either the liquidity table or the VTT formula table for a given arrival,
+not both.
 
-Example:
+## Caravan Profiles
 
-Cargo	Purchase Cost
-Player goods	520 gp
-Trade goods	340 gp
-Total cargo investment: 860 gp
+Choose or roll a profile for each caravan. A profile changes the feel of the
+caravan, what it tends to carry, and what it prefers to buy.
 
-Trade Expedition
-A trade expedition represents travel between settlements and usually lasts between 3 and 14 days, depending on the route.
+Round adjusted stock pools to the nearest 5 gp.
 
-Upon reaching its destination, resolve the expedition.
+| Profile | Preferred Goods | Stock Adjustment |
+| --- | --- | --- |
+| General Trader | Mixed cargo, common tools, cloth, household goods, basic imports | No adjustment |
+| Provisioner | Food, fodder, water, lamp oil, rope, camping goods, ammunition | Provision Stock × 1.5; General Stock × 0.75; Specialty Stock × 0.5 |
+| Outfitter | Weapons, armor, tools, repair materials, kits, travel gear | Provision Stock × 0.75; General Stock × 1.25; Specialty Stock × 1 |
+| Luxury Broker | Jewelry, fine clothing, spices, art objects, rare curios | Provision Stock × 0.5; General Stock × 0.75; Specialty Stock × 1.5 |
+| Salvage Dealer | Scrap, trophies, monster parts, reclaimed gear, alchemical salvage | Provision Stock × 0.75; General Stock × 1; Specialty Stock × 1.25 |
 
-Step 1 — Determine Trade Level
-The Trade Level equals the lower of:
+Profiles do not change the caravan's level or Working Capital. They change the
+kind of business the caravan does.
 
-Caravan Level
+## Stock Pools and Item Availability
 
-Settlement Level
+Stock pools are not exact inventories. They are spending limits for the GM.
 
-This represents the largest market the caravan can effectively exploit.
+When the PCs want to buy something from a caravan, determine whether the item
+fits one of the stock pools below. If it does, subtract the item's price from
+that pool.
 
-Step 2 — Trade Check
-Attempt a Mercantile Lore check against the standard Level DC for the Trade Level.
+### Provision Stock
 
-Mercantile Lore
-vs
-Level DC
-Step 3 — Determine Profit
-Result	Profit
-Critical Success	+25% of invested cargo
-Success	+10% of invested cargo
-Failure	No profit
-Critical Failure	Lose 10% of invested cargo
-Add the resulting profit directly to the caravan's Liquid Gold.
+Provision Stock represents the caravan's current supply of routine travel and
+camping staples.
 
-Caravan Experience
-Successful trade expands business connections, reputation and logistics.
+This usually includes the following.
 
-Result	XP Earned
-Critical Success	150 XP
-Success	100 XP
-Failure	50 XP
-Critical Failure	25 XP
-A caravan levels up after accumulating 1,000 XP.
+- Rations and preserved food
+- Fodder and feed
+- Waterskins, sacks, blankets, tents, rope, torches, and lamp oil
+- Common ammunition and simple replacement supplies
+- Other common mundane gear that a traveling company would reasonably keep in
+  ready quantity
 
-Any excess XP carries over.
+As long as the caravan still has at least 10 gp of Provision Stock, assume it
+can fill any reasonable purchase of common staples without the GM tracking
+individual bundles.
 
-Caravan Improvements
-Whenever a caravan gains a level:
+### General Stock
 
-Increase Mercantile Lore according to the progression table.
+General Stock represents ordinary trade goods not tied to a special market.
 
-Increase Trade DC.
+General Stock can supply common items up to item level equal to the caravan's
+Market Level - 1, minimum 1. This includes mundane gear, common consumables,
+and routine permanent items that make sense for the caravan's route.
 
-Roll new Liquid Gold using the new level.
+### Specialty Stock
 
-Expand the caravan's business network and number of employees as appropriate.
+Specialty Stock represents the caravan's distinctive goods.
 
-Higher-level caravans naturally represent larger organizations with additional guards, wagons, contracts, warehouses, and established trade routes.
+Specialty Stock can supply common items matching the caravan's profile up to
+item level equal to the caravan's Market Level. With GM approval, it can also
+include a small number of uncommon goods that strongly fit the caravan's route,
+patrons, or profile.
 
-Market Conditions
-The GM may adjust selling prices before negotiation.
+Rare and unique items should never appear from stock pools unless their
+presence is story-important.
 
-Market Condition	Modifier
-Weak demand	–10%
-High demand	+10%
-Local demand for uncommon goods	+15%
-Collector purchasing rare or unique items	+25% or more
-These modifiers are applied before any negotiated adjustments.
+## Market Level
 
-Market Saturation
-Small settlements cannot absorb unlimited quantities of expensive merchandise.
+Whenever stock, resale value, or trade reach matters, determine the caravan's
+Market Level.
 
-The GM may reduce trade profits if the caravan attempts to sell significantly more valuable goods than the destination settlement could realistically purchase.
+The Market Level is the lower of the following.
 
-As a guideline:
+- Caravan Level
+- Settlement Level of the place where the caravan is currently trading
 
-Settlement	Maximum Comfortable Trade
-Village	Small quantities of common goods
-Town	Moderate cargo
-City	Large cargo
-Metropolis	Effectively unrestricted
-Trade Events (Optional)
-Roll once during each expedition.
+This represents the scale of the market the caravan can currently exploit.
 
-d20	Event
-1–2	Bandits or monster attack. Lose 10% cargo.
-3–4	Tariffs, tolls or bribes. Lose 5% cargo value.
-5–6	Delays. No profit modifier.
-7–14	Uneventful journey.
-15–17	Strong demand. Increase profit by 5%.
-18–19	Exceptional market. Increase profit by 10%.
-20	Trade boom. Increase profit by 20% and gain +50 XP.
-Recurring Caravans
-A caravan that repeatedly visits the same settlements should retain:
+## Buying from a Caravan
 
-Current level
+Ordinary purchases can be resolved at listed price. If haggling matters, use
+[Assess Value or Negotiate](../rules/06-exploration-actions.md).
 
-Current XP
+Use the following guidelines.
 
-Current Liquid Gold
+- If the desired goods fit Provision Stock, deduct their price from Provision
+  Stock.
+- If the desired goods fit General Stock, deduct their price from General Stock.
+- If the desired goods fit the caravan's profile, deduct their price from
+  Specialty Stock first.
+- Once a stock pool is depleted, the caravan cannot provide more of that type
+  of good until it resupplies.
 
-Reputation with the PCs
+The GM should not let PCs strip a caravan of all mundane necessities unless the
+price paid and the fiction support it. A caravan still needs enough of its own
+provisions to stay on the road.
 
-Previous negotiations
+## Selling to a Caravan
 
-A caravan remembers previous deals. Once a specific item has been negotiated, the same caravan will not renegotiate its purchase price for that item again.
+When the PCs sell to a caravan, use [Assess Value or
+Negotiate](../rules/06-exploration-actions.md) to determine the final price.
+This subsystem answers three additional questions.
 
-I think one design change would improve the entire subsystem
-I would remove "Trade Bonus DC" from the table and simply call it Trade DC everywhere. "Trade Bonus DC" mixes two different concepts (a bonus and a DC). The cleaner presentation is:
+### Can the caravan afford the purchase?
 
-Level	Mercantile Lore	Trade DC
-Then throughout the rules, consistently refer to Trade DC. It reads much more like an official PF2e subsystem and avoids unnecessary terminology.
+The caravan cannot buy more than its current Working Capital allows.
 
+If the caravan lacks sufficient Working Capital, it can do one of the
+following.
 
-Yes good idea
+- Refuse the purchase
+- Buy only part of the lot
+- Offer delayed payment, letters of credit, or barter if the campaign supports
+  such arrangements
 
-I also have one additional suggestion that I think will make the subsystem feel much more like an official PF2e subsystem.
+### Is the cargo a good fit?
 
-Rename "Liquid Gold" → Working Capital
-"Liquid Gold" is understandable, but Working Capital better describes what the number actually represents: money currently allocated for commerce.
+Assign the cargo one broad tag or two at most.
 
-For example:
+- Provisions
+- General Goods
+- Arms and Armor
+- Alchemical and Medical
+- Luxury
+- Salvage and Curios
 
-Working Capital represents the coins, letters of credit, and readily available assets the caravan has available to purchase goods. It doesn't represent the caravan's total wealth, wagons, buildings, or merchandise.
+If the goods match the caravan's profile or the destination market's demand,
+apply one favorable market modifier before negotiation, usually +10%.
 
-Then your table becomes:
+If the goods are a poor fit for the caravan's route, bulky with weak demand, or
+already oversupplied, apply one unfavorable market modifier before negotiation,
+usually -10%.
 
-Level	Mercantile Lore	Trade DC	Working Capital
-3	+10	20	/r 280+(10d10-55)
-4	+12	22	/r 420+(12d10-66)
-5	+14	24	/r 700+(16d10-88)
-6	+16	26	/r 900+(18d10-99)
-7	+18	28	/r 1120+(20d10-110)
-8	+20	30	/r 1600+(24d10-132)
-9	+22	32	/r 2400+(30d10-165)
-10	+24	34	/r 3600+(36d10-198)
-I also recommend a couple of terminology changes for consistency:
+Do not stack multiple special demand modifiers unless the circumstance is
+exceptional.
 
-Trade Expedition → Trade Journey (reads more naturally and can cover anything from a short route to a long caravan run).
+### What happens after the purchase?
 
-Trade Level → Market Level. Since you're taking the lower of the caravan level and the destination settlement level, you're really determining the size of the market, not the quality of the trade.
+Subtract the final purchase price from the caravan's Working Capital and add
+that amount to its Invested Cargo.
 
-That gives you:
+The caravan has now converted liquid buying power into cargo it intends to
+resell elsewhere.
 
-Determine Market Level.
+## Destination Demand
 
-Attempt a Mercantile Lore check against the Level DC of the Market Level.
+To make the world feel alive, assign settlements and routes one or two strong
+demand tags. This affects both what caravans carry into an area and what they
+prefer to buy before leaving it.
 
-Apply profit.
+| Destination or Route | Usually High Demand | Usually Weak Demand |
+| --- | --- | --- |
+| Frontier Village | Provisions, General Goods, Arms and Armor | Luxury |
+| Mining Camp | Provisions, General Goods, Alchemical and Medical | Luxury |
+| Military Post | Provisions, Arms and Armor, Alchemical and Medical | Luxury |
+| Pilgrimage Route | Provisions, Alchemical and Medical, Luxury | Salvage and Curios |
+| Market Town | General Goods, Provisions | None by default |
+| Noble Enclave | Luxury, Alchemical and Medical | Salvage and Curios |
+| Ruin Fringe | Provisions, Salvage and Curios, Alchemical and Medical | Luxury |
+| River Port or Trade Hub | General Goods, Luxury, mixed imports | None by default |
 
-Gain XP.
+This table is guidance, not a restriction. A famine, war, plague, festival, or
+recent monster attack can change demand immediately.
 
-I would also simplify the growth section. Instead of saying "roll new Working Capital using the new level," I'd say:
+## Trade Journeys
 
-Whenever a caravan completes a successful trade journey or first appears in the campaign, roll its Working Capital. A caravan that has recently suffered losses or made major investments may have less Working Capital at the GM's discretion.
+A trade journey represents the caravan leaving the current settlement, traveling
+to another market, conducting business there, and returning with its affairs
+resolved. In most campaigns this takes 3 to 14 days, but remote routes may take
+far longer.
 
-That better explains why the amount changes. It's not magically becoming richer because it leveled; it's because it has completed more business and reinvested its profits. It also lets you reroll its available funds each time the PCs encounter it without implying the caravan literally has exactly that amount at all times.
+Trade journeys are resolved off-screen unless the journey itself becomes an
+adventure.
 
-Overall, I think this has evolved into a cohesive subsystem. It no longer feels like a collection of house rules—it feels like something that could plausibly appear in a Pathfinder subsystem chapter.
+### Step 1: Choose the Destination
 
+Choose the destination settlement and note its level and demand tags.
 
-Good idea apply it
+Determine the Market Level as normal.
 
-I would revise the subsystem as follows. These changes improve terminology, make the economy feel more natural, and better explain why caravan wealth changes over time.
+### Step 2: Note Route Difficulty
 
-Caravan Trading System
-Overview
-Caravans are mobile businesses that travel between settlements purchasing goods, transporting cargo, and reselling it elsewhere. Unlike ordinary merchants, caravans possess their own working capital, trade expertise, business reputation, and experience. Over time, successful caravans expand their networks, increase their purchasing power, and establish themselves as prominent trading enterprises.
+Choose one route category.
 
-This subsystem serves two purposes:
+| Route | Modifier |
+| --- | ---: |
+| Protected or heavily patrolled | +1 |
+| Ordinary | +0 |
+| Dangerous | -1 |
+| War-torn, monster-haunted, or highly unstable | -2 |
 
-It determines how much wealth a caravan has available to purchase goods from the PCs.
+### Step 3: Determine Cargo Fit
 
-It simulates the caravan's commercial growth between encounters, allowing recurring caravans to develop naturally over the course of a campaign.
+If most of the caravan's Invested Cargo matches the destination's strong demand
+or the caravan's own profile, the journey gains a +1 circumstance bonus to the
+trade check.
 
-Caravan Statistics
-Every caravan has the following statistics.
+If the cargo is a poor fit for the destination or clearly oversupplied there,
+the journey takes a -1 circumstance penalty to the trade check.
 
-Statistic	Description
-Level	Overall size, reputation, logistics, and commercial capability.
-Mercantile Lore	Skill modifier used for negotiations, market analysis, and trade operations.
-Trade DC	Equal to 10 + Mercantile Lore modifier. Used whenever the caravan haggles over prices.
-Working Capital	Coinage, letters of credit, and readily available assets available to purchase goods. This doesn't represent the caravan's total wealth, wagons, merchandise, or property.
-Caravan XP	Experience earned through successful trade journeys.
-Caravan Level Progression
-Level	Mercantile Lore	Trade DC	Working Capital
-3	+10	20	/r 280+(10d10-55)
-4	+12	22	/r 420+(12d10-66)
-5	+14	24	/r 700+(16d10-88)
-6	+16	26	/r 900+(18d10-99)
-7	+18	28	/r 1120+(20d10-110)
-8	+20	30	/r 1600+(24d10-132)
-9	+22	32	/r 2400+(30d10-165)
-10	+24	34	/r 3600+(36d10-198)
-Roll a caravan's Working Capital whenever it first appears in the campaign or after it has completed a trade journey.
+### Step 4: Check for Market Saturation
 
-The result represents the funds currently available for purchasing goods and paying expenses. Previous investments, successful sales, unexpected losses, taxes, wages, or other business costs are already reflected in this amount.
+Small settlements cannot absorb unlimited quantities of valuable cargo.
 
-Purchasing Goods
-Caravans purchase goods using the Assess Value / Negotiate exploration activity.
+If the caravan's Invested Cargo exceeds the destination's Comfortable Trade
+Value, either split the sale across multiple journeys or apply a -2 circumstance
+penalty to the trade check.
 
-Friendly merchants generally negotiate against the item's Level DC.
+| Settlement Level | Comfortable Trade Value |
+| --- | ---: |
+| 0-2 | 100 gp |
+| 3-4 | 250 gp |
+| 5-6 | 750 gp |
+| 7-8 | 2,000 gp |
+| 9-10 | 5,000 gp |
+| 11+ | Effectively unrestricted |
 
-Professional caravans, merchant houses, guild factors, and organized businesses usually negotiate using their Trade DC.
+### Step 5: Attempt the Trade Check
 
-A caravan cannot purchase goods whose negotiated value exceeds its current Working Capital.
+Attempt a Mercantile Lore check against the standard Level DC of the Market
+Level, applying route and cargo modifiers.
 
-Cargo
-Track only the caravan's investment, not every individual crate or wagon unless doing so is important to the story.
+### Step 6: Resolve Profit or Loss
 
-Example:
+Return the caravan's Invested Cargo to Working Capital, then apply the result
+below to determine profit or loss on that cargo.
 
-Cargo	Purchase Cost
-Goods purchased from PCs	520 gp
-Other trade goods	340 gp
-Total Cargo Investment: 860 gp
+| Result | Trade Result | Caravan XP |
+| --- | --- | ---: |
+| Critical Success | Gain profit equal to 25% of Invested Cargo | 150 XP |
+| Success | Gain profit equal to 10% of Invested Cargo | 100 XP |
+| Failure | No profit or loss | 50 XP |
+| Critical Failure | Lose value equal to 10% of Invested Cargo | 25 XP |
 
-Trade Journey
-A trade journey represents transporting goods between settlements and usually requires 3–14 days, depending on distance, terrain, and weather.
+After resolving the journey, set Invested Cargo to 0.
 
-After arriving, resolve the journey.
+If the caravan had no meaningful Invested Cargo, the GM can skip the check or
+resolve a token journey that grants no profit and no XP.
 
-Step 1 — Determine Market Level
-The Market Level equals the lower of:
+## Caravan Advancement
 
-the caravan's Level
+A caravan gains a level every 1,000 XP. Excess XP carries over.
 
-the destination settlement's Level
+When a caravan gains a level, update the following.
 
-This represents the largest market the caravan can effectively exploit.
+- Mercantile Lore
+- Trade DC
+- Base Working Capital
+- Stock Pools
 
-Step 2 — Trade Check
-Attempt a Mercantile Lore check against the standard Level DC for the Market Level.
+The caravan does not instantly gain its new Base Working Capital in coin. Use
+the new value the next time you roll liquidity after a completed trade journey
+or major financial reset.
 
-Mercantile Lore
-vs
-Market Level DC
-Step 3 — Determine Profit
-Result	Profit
-Critical Success	+25% of Cargo Investment
-Success	+10% of Cargo Investment
-Failure	No profit
-Critical Failure	Lose 10% of Cargo Investment
-Add the resulting profit to the caravan's available wealth.
+Leveling up represents better routes, more employees, stronger contracts,
+greater access to capital, and a wider reputation.
 
-Caravan Experience
-Trade success also expands the caravan's commercial reputation and network.
+## Caravan Perks
 
-Result	XP Earned
-Critical Success	150 XP
-Success	100 XP
-Failure	50 XP
-Critical Failure	25 XP
-A caravan gains a level after accumulating 1,000 XP. Any excess XP carries over.
+Each time a caravan gains a level, it also gains one perk. Perks represent the
+way that caravan has chosen to grow. Some caravans expand their route
+discipline and transport capacity, some become harder targets, some learn to
+carry dangerous or delicate cargo, and some turn themselves into social events
+that attract crowds wherever they stop.
 
-Caravan Growth
-Whenever a caravan gains a level:
+Unless a perk says otherwise, a caravan cannot take the same perk more than
+once.
 
-Increase its Mercantile Lore according to the progression table.
+The GM should choose perks that match the caravan's story, staff, patrons,
+route, and profile rather than selecting them at random.
 
-Increase its Trade DC.
+### Logistics Perks
 
-Expand its trade network, employees, wagons, contracts, and reputation as appropriate.
+#### Efficient Quartermasters
 
-Leveling reflects the gradual growth of a successful business rather than a sudden increase in wealth.
+The caravan's records, loading plans, and supply discipline are unusually good.
 
-Refreshing Working Capital
-Whenever a caravan first appears after completing one or more trade journeys, roll its Working Capital using its current level.
+- Increase Provision Stock by 25%.
+- Increase General Stock by 10%.
+- The caravan ignores the first 10 gp of Provision Stock that would otherwise
+  be depleted by ordinary rural trade during a visit.
 
-The GM may adjust the result if circumstances warrant. For example:
+#### Reliable Teamsters
 
-A caravan that recently suffered bandit attacks or poor markets may have reduced Working Capital.
+The caravan has disciplined drivers, spare animals, and better route planning.
 
-A caravan that completed several exceptionally profitable journeys may have additional Working Capital.
+- Gain a +1 circumstance bonus to trade checks during Trade Journeys.
+- Treat ordinary routes as protected or heavily patrolled for the purpose of
+  route modifiers.
 
-Major investments, taxes, wages, or purchasing new wagons may temporarily reduce available funds.
+#### Warehouse Ties
 
-This roll represents only the caravan's immediately available purchasing power at the time it is encountered.
+The caravan has stable suppliers and off-route storage arrangements.
 
-Market Conditions
-Before negotiation, determine whether local market conditions affect demand.
+- Increase Base Working Capital by 10%.
+- When determining current liquidity, treat a result of 1 as 2.
 
-Market Condition	Modifier
-Weak demand	–10%
-Strong demand	+10%
-Local demand for uncommon goods	+15%
-Collector seeking rare or unique goods	+25% or more
-Apply these modifiers before any negotiated adjustments.
+#### Broad Load Discipline
 
-Market Saturation
-Settlements can absorb only a limited quantity of valuable merchandise.
+The caravan is unusually good at packing mixed cargo without losing efficiency.
 
-If the caravan attempts to sell significantly more valuable goods than the destination market can reasonably purchase, the GM should reduce profits appropriately.
+- Increase Comfortable Trade Value by 25% when checking market saturation for
+  this caravan.
+- The caravan can carry one additional cargo tag without taking the normal poor
+  fit penalty during a Trade Journey.
 
-As a guideline:
+### Defense Perks
 
-Settlement	Typical Market Capacity
-Village	Small quantities of common goods
-Town	Moderate cargo
-City	Large cargo
-Metropolis	Effectively unlimited
-Trade Events (Optional)
-Roll once during each trade journey.
+#### Hardened Guards
 
-d20	Event
-1–2	Bandits or monsters. Lose 10% of Cargo Investment.
-3–4	Tariffs, tolls, or bribes. Lose 5% of Cargo Investment.
-5–6	Delays. No modifier.
-7–14	Uneventful journey.
-15–17	Strong market. Profit +5%.
-18–19	Exceptional demand. Profit +10%.
-20	Trade boom. Profit +20% and gain +50 XP.
-Recurring Caravans
-Recurring caravans should retain:
+The caravan employs better guards, tougher outriders, or more experienced
+watch captains.
 
-Level
+- Treat dangerous routes as ordinary for the purpose of route modifiers.
+- If you use Optional Trade Events, reduce cargo loss from bandits, monsters,
+  or sabotage by 5% of Invested Cargo.
 
-Caravan XP
+#### Veteran Escort
 
-Current Working Capital (until refreshed)
+The caravan travels with a respected escort force or contracted mercenaries.
 
-Trade reputation
+- Gain a +2 circumstance bonus to Trade DC against coercive or openly hostile
+  price pressure.
+- If the caravan suffers a critical failure on a Trade Journey, you can reduce
+  it to a failure once per arrival cycle.
 
-Relationships with the PCs
+#### Secure Camp Routine
 
-Caravans remember previous business dealings.
+The caravan is hard to raid while encamped and keeps better night discipline.
 
-Unless market conditions have substantially changed, a caravan won't renegotiate the purchase price of the same item more than once. This prevents repeated attempts to improve the same transaction while encouraging players to seek different buyers or wait for changing markets.
+- If you use Optional Trade Events, a result of 1 on the event table becomes a
+  result of 2 instead.
+- Rural settlements and roadside camps treat the caravan as one step safer and
+  more respectable for first impressions.
 
-I think this version reads much closer to an official PF2e subsystem. It uses consistent terminology ("Trade DC," "Working Capital," "Market Level," "Trade Journey"), separates narrative concepts from mechanics, and clearly explains why caravans' available funds fluctuate without implying that their total wealth magically changes. It should also integrate cleanly with your Assess Value / Negotiate exploration activity.
+### Special Cargo Perks
 
+#### Warded Compartments
 
+The caravan has invested in sealed chests, treated linings, or magical
+stabilization for fragile goods.
+
+- Increase Specialty Stock by 25%.
+- The caravan can transport one category of delicate cargo without it counting
+  as a poor fit solely because of fragility, contamination risk, or spoilage.
+
+Examples include alchemical goods, preserved monster parts, ritual supplies,
+rare books, unstable salvage, or other similarly delicate cargo.
+
+#### Arcane Caravan Guards
+
+The caravan employs battle mages, abjurers, or ritual specialists to defend
+high-value loads.
+
+- The caravan can safely carry magically protected cargo.
+- Goods that are especially vulnerable to theft, magical tampering, or hostile
+  environments do not take the usual penalty for obvious risk.
+- If you use Optional Trade Events, magical sabotage, spoilage from ambient
+  magic, or similar supernatural mishaps can be ignored once per Trade Journey.
+
+This perk is ideal for caravans that move spellbooks, rare reagents, cursed
+objects under seal, unstable relics, diplomatic treasures, or other cargo that
+ordinary guards are not enough to protect.
+
+#### Sanctuary Cages
+
+The caravan has custom cages, reinforced shrines, holy seals, padded frames, or
+other built environments suited to special transport.
+
+- Choose one category of special cargo the caravan is built to carry, such as
+  live beasts, holy relics, hazardous alchemy, funerary remains, or noble
+  luxuries.
+- While carrying that category, the caravan gains a +1 circumstance bonus to
+  trade checks for Trade Journeys.
+- Buyers seeking that category treat the caravan as one step more reputable.
+
+### Entertainment Perks
+
+#### Caravan Festival
+
+The caravan brings musicians, cooks, performers, or novelty attractions that
+turn its arrival into an event.
+
+- Rural settlements, villages, and small towns usually have a favorable initial
+  attitude toward the caravan unless there is a reason not to.
+- Increase Provision Stock sales opportunities by 25% during visits to
+  under-supplied or isolated communities.
+
+#### Carnival Train
+
+The caravan includes games, stage acts, curiosities, beasts, or traveling
+spectacles that draw paying crowds.
+
+- Increase Working Capital by 10% after any successful Trade Journey whose
+  destination is a village, town, pilgrimage route, or festival site.
+- The caravan can justify carrying one additional Luxury cargo tag without it
+  feeling out of place in poor or rural regions.
+
+#### Beloved Entertainers
+
+The caravan has become a known social institution on part of its route.
+
+- When this caravan returns to a settlement that has seen it before, treat the
+  caravan as having a favorable reputation unless the campaign fiction says
+  otherwise.
+- The GM can treat one weak-demand result for Luxury or novelty goods as normal
+  demand in communities that look forward to the caravan's arrival.
+
+### Advanced Perks
+
+The following perks are best for caravans of 6th level or higher.
+
+#### Regional Trade Network
+
+Prerequisite: Warehouse Ties or Reliable Teamsters
+
+The caravan has become part of a wider and more resilient commercial web.
+
+- Increase Base Working Capital by 15%.
+- Gain a +1 circumstance bonus to Mercantile Lore checks made for Trade
+  Journeys.
+- Once per arrival cycle, the caravan can count the destination settlement as
+  1 level higher for determining Market Level, to a maximum of the caravan's
+  own level.
+
+#### Iron Road Convoy
+
+Prerequisite: Hardened Guards
+
+The caravan has grown into a disciplined convoy with strong route control.
+
+- Treat dangerous routes as protected or heavily patrolled for the purpose of
+  route modifiers.
+- If you use Optional Trade Events, results of 1 or 2 each become 3 instead.
+
+#### Grand Procession
+
+Prerequisite: Caravan Festival or Carnival Train
+
+The caravan is no longer just a merchant line but a public attraction in its
+own right.
+
+- Increase Specialty Stock by 20%.
+- Villages and towns usually count as one step more receptive to the caravan's
+  arrival.
+- After a successful Trade Journey to a rural, frontier, or pilgrimage
+  destination, increase final profit by an additional 5% of Invested Cargo.
+
+## Optional Trade Events
+
+If you want journeys to feel more dynamic, roll 1d12 once per trade journey.
+
+| d12 | Event |
+| --- | --- |
+| 1 | Bandits, monsters, or sabotage. Lose 10% of Invested Cargo before resolving the trade check. |
+| 2 | Spoilage, breakage, or animal loss. Lose 5% of Invested Cargo before resolving the trade check. |
+| 3 | Tariffs, bribes, or emergency repairs. Reduce final profit by 5% of Invested Cargo. |
+| 4 | Delay. No direct effect, but the caravan arrives late and may miss a story opportunity. |
+| 5-8 | Uneventful journey. |
+| 9 | Favorable rumor. Gain a +1 circumstance bonus to the trade check. |
+| 10 | Strong market. Increase final profit by 5% of Invested Cargo. |
+| 11 | Exclusive contract or timely arrival. Increase final profit by 10% of Invested Cargo. |
+| 12 | Trade boom. Increase final profit by 20% of Invested Cargo and gain 50 additional XP. |
+
+## Recurring Caravans
+
+A recurring caravan should retain the following between appearances.
+
+- Current level
+- Current XP
+- Current Working Capital
+- Current profile
+- Current reputation with the PCs
+- Active route notes
+- Any major debts, losses, guards, rivals, or patrons
+
+Caravans should also remember previous deals.
+
+- A caravan that was cheated, rescued, or treated generously should behave
+  accordingly.
+- A caravan that repeatedly buys the same narrow kind of cargo should begin to
+  saturate that route unless it expands to a new market.
+- A caravan that repeatedly profits from a region should become more recognizable
+  there, with better security and more reliable stock.
+
+This is where the subsystem stops being a merchant table and starts feeling
+like part of the campaign world.
+
+## Quick Caravan Creation
+
+When you need a caravan quickly, use this checklist.
+
+1. Choose a level based on the route's importance.
+2. Choose a profile.
+3. Roll liquidity and set current Working Capital.
+4. Determine the current settlement's level and the caravan's Market Level.
+5. Adjust stock pools for the profile.
+6. Assign one likely destination and one or two demand tags.
+7. Name the caravan and note one memorable detail.
+
+## Example Caravan
+
+**Red Salt Company** is a 5th-level provisioner currently trading in a 4th-level
+frontier town.
+
+- Level 5
+- Profile: Provisioner
+- Mercantile Lore +14
+- Trade DC 24
+- Base Working Capital 700 gp
+- Liquidity: Flush
+- Current Working Capital 805 gp
+- Market Level 4
+- Provision Stock 150 gp
+- General Stock 135 gp
+- Specialty Stock 60 gp
+- Invested Cargo 0 gp
+- Caravan XP 300
+
+Because Red Salt Company is a provisioner in a frontier settlement, it can
+easily sell food, fodder, rope, tents, common ammunition, and similar travel
+staples. It is also likely to buy preserved food, alchemical field supplies,
+beast feed, or other practical goods before departing for a mining camp deeper
+in the hills.

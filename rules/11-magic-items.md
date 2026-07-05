@@ -10,7 +10,8 @@ the item's base price when they attempt to Assess Value before negotiating a
 sale or purchase.
 
 If the item has property runes, special properties, or unique powers activated
-with an interaction, command, or envision, it must be adequately identified
+with an Interact, Command, or Envision activation, it must be adequately
+identified
 before its latent magical powers can be awakened and understood. Until it is
 identified, such an item only applies its fundamental and property runes that
 the players have encountered before.
@@ -29,7 +30,7 @@ all repaired through Crafting. This approach is simple but sets the wrong
 assumptions and lacks flavor. Instead of using Repair activity to repair
 overcharged items, use Repair Overcharge.
 
-### Repair Overcharge | TRAINED VARIOUS SKILLS ACTIVITY
+### Repair Overcharge | TRAINED EXPLORATION ACTIVITY
 
 [EXPLORATION] [MANIPULATE]
 You spend 10 minutes examining the aura of a magic wand or staff broken

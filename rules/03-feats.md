@@ -118,8 +118,9 @@ auditory, emotion, sonic, or visual trait to gain the subtle trait.
 ---
 By shaping the magical energies and parameters of your spells all in your head
 through sheer concentration, you can simplify the incantations and gestures
-needed to spell cast, leaving them barely noticeable. **Make a Stealth or
-Spell Attack check (whichever is higher) against the target’s Perception DC,
+needed to cast the spell, leaving them barely noticeable. **Make a Stealth
+check or spell attack roll (using whichever modifier is higher) against the
+target’s Perception DC,
 or two checks if the spell has the manipulate trait and the target is
 observing you. If you succeed in the check (or both checks) and** **the
 following action you use is to Cast a Spell, the spell gains the subtle
@@ -155,8 +156,8 @@ vanish into thin air.
 ---
 You’ve learned how to cast many of your spells without speaking the words of
 power you would normally need to provide. **When you use an action to Conceal
-Spell, you automatically get a success on the first Stealth or Spell Attack
-check.**This makes the spell quieter and allows you to cast it in areas where
+Spell, you automatically get a success on the first Stealth check or spell
+attack roll.**This makes the spell quieter and allows you to cast it in areas where
 sound can’t carry. However, the spell still has visual manifestations, so this
 doesn’t make it any less obvious to someone who sees you casting it.
 

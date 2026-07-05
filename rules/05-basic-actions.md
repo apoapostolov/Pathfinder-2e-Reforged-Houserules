@@ -7,7 +7,7 @@
 ### Aid (pg. 463)
 
 The default DC for an Aid check is DC 15 if the situation happens during
-Downtime or Narrative Exploration mode, or DC 20 if performed in Exploration
+Downtime or low-pressure exploration, or DC 20 if performed in Exploration
 mode under danger, or Encounter mode (such as Combat or during a Sneak). The
 GM has the final say if the action you are Aiding will use DC 15 or DC 20, and
 you can know this before you attempt to Aid.
@@ -126,8 +126,8 @@ additional round of air if they take damage or fail a saving throw.
 turn unless you move or your opponent Escapes. Reduce the remaining air by 1
 round (A creature can sustain up to 5 + its Constitution modifier rounds of
 air before dropping unconscious and starting suffocating; see Player Core 1,
-pg. 437). Whenever your opponent attempts to speak (including casting spells
-with verbal components or activating items with command components) while
+pg. 437). Whenever your opponent attempts to speak (including Casting Spells
+with the concentrate trait or activating items with a Command activation) while
 choked, they must succeed at a DC 11 flat check or lose 1 additional round of
 air.
 
@@ -220,7 +220,7 @@ off-guard while gagging the creature.
 
 **Critical Success** As a success, but the opponent is also *stunned* 1.
 
-**Success** The opponent gains the gagged condition until the end of your next
+**Success** The opponent gains the Gagged condition until the end of your next
 turn unless you move or your opponent Escapes the gag. Unless the target is
 also grabbed, it has a +2 circumstance bonus to its attempts to Escape your
 gagging.
@@ -288,7 +288,7 @@ lifting a heavy rock. Even if you could normally lift it without a check,
 lifting the object puts you over your maximum bulk and causes movement to be
 difficult to nearly impossible.
 
-Make an Athletics check against a DC. The DM may adjust the difficulty
+Make an Athletics check against a DC. The GM may adjust the difficulty
 depending on things like the conditions of the lift, typically with the Easy or
 Hard DC adjustments. Objects without means to be lifted such as handles to
 grab, or with irregular shape and center of weight are always at least Hard to
@@ -297,7 +297,7 @@ building or the roots of a profoundly ancient tree, might use the Very Hard or
 even Incredibly Hard DC adjustments.
 
 Lifting an unwilling creature that isn't somehow rendered helpless is nearly
-impossible. A DM may allow you to attempt to do it under certain circumstances,
+impossible. A GM may allow you to attempt to do it under certain circumstances,
 but its DC should be one step harder under such circumstances or use the
 aforementioned difficulty adjustments if the DC is already Legendary.
 

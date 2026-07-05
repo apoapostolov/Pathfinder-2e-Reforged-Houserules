@@ -31,13 +31,13 @@ apply to my campaigns. They are reprinted below for ease to use:
 When creating a character at the start of a new campaign, limit yourself to up
 to one uncommon rarity option (ancestry, background, class, feat, heritage,
 item, or spell) that must be well integrated into your character concept and
-backstory. The DM must still approve your choice and may build personal
+backstory. The GM must still approve your choice and may build personal
 motivation or events around it to make it memorable. You cannot choose rare
 options: these are reserved for rewards unlocked within the campaign or options
 unlocked at the end of a campaign and available for the next.
 
 As a rule of thumb, you should not pick the same uncommon or rare option for
-the following two characters you make with the same DM or group unless the DM
+the following two characters you make with the same GM or group unless the GM
 allows you to. This limits regular access to "must-have" player-favorite
 features that are often chosen not because of their flavor or importance to the
 campaign but because of their power and for build optimization. It's okay to

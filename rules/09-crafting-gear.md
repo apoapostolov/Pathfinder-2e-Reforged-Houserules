@@ -38,10 +38,10 @@ allow you to replace purchased materials with raw materials gathered from
 nature, usually by applying the Earn an Income rules using skill checks like
 Crafting, Medicine, Nature, or applicable Lore. If the GM allows you to
 improvise with raw materials, you must be at least an expert in Crafting. The
-Crafting check is made at hard difficulty (DC+2). If the materials are of low
-quality, particularly scarce, and ingenuity is needed to make it work, you must
-be at least a master in Crafting, and the crafting check is made at very hard
-difficulty (DC+5).
+Crafting check uses a Hard DC adjustment. If the materials are of low quality,
+particularly scarce, and ingenuity is needed to make it work, you must be at
+least a master in Crafting, and the Crafting check uses a Very Hard DC
+adjustment.
 
 ## Rushed Crafting
 

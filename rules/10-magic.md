@@ -2,12 +2,12 @@
 
 ## Auras, Emanations and Line of Effect
 
-Auras, and other emanation-type effects, are except of the Line of Effect
-rules. This means that when creating effects like Auras and spells like Bless
-or Detect Magic, their effect can pass through walls, doors, and other objects
-that completely block visibility. However, should part of the effect or an
-additional effect needs to target creatures or objects or effects within Auras
-or emanations, then this effect requires a Line of Effect *(Player Core,
+Auras, and other emanation effects, are an exception to the normal Line of
+Effect rules. This means that when creating effects like auras and spells like
+*bless* or *detect magic*, their effect can pass through walls, doors, and
+other objects that completely block visibility. However, if part of the effect
+or an additional effect needs to target creatures, objects, or effects within
+the aura or emanation, that effect requires Line of Effect *(Player Core,
 pg. 426).*
 
 Some auras and emanations have auditory (*Player Core, pg. 452*) and visual
@@ -31,7 +31,7 @@ The GM may require a Line of Effect based on the intent of the spell.
 > who is in another room, through a closed door, even if the Aura’s magic field
 > extends to them.
 
-## Verbal Component
+## Spells with the Concentrate Trait
 
 Every spell with the concentrate trait requires vocal incantations with a
 raised voice (65-75 dB), identified as spellcasting. If the spell requires one
@@ -54,7 +54,7 @@ not belong to a specific language. You cannot Cast a Spell using words in a
 dead language to make it impossible for others to detect or identify the
 spell.
 
-## Somatic Component
+## Spells with the Manipulate Trait
 
 Every spell with the manipulate trait requires full motion of the upper body
 and the arms and is identifiable as spellcasting unless cleverly hidden in a

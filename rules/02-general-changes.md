@@ -47,11 +47,11 @@ roleplaying of the activity or creative approach to resolving it offers up to a
  +4 untyped bonus to the check.
 
 The creature's disposition towards the party or specific members modifies the
-checks. Creatures that are indifferent or have better dispositions may increase
-the difficulty to hardness (DC+2) if they are forced to do things they don't
-wish to do. Unfriendly creatures always increase the check’s difficulty to hard
-(DC+2), and hostile creatures increase the difficulty to very hard (DC+5) if
-the check can be made.
+checks. Creatures that are indifferent or have better dispositions might call
+for a Hard DC adjustment if they are forced to do things they don't wish to do.
+Unfriendly creatures always increase the check’s difficulty with a Hard DC
+adjustment, and hostile creatures increase the difficulty with a Very Hard DC
+adjustment if the check can be made.
 
 ## Movement in Dangerous Areas
 
@@ -125,9 +125,9 @@ check is not a successful Recall Knowledge for other feat requirements.
 
 > To properly apply this rule, the player should call “I want to Recall
 > Knowledge to learn about” for normal Recall Knowledge with difficulty
-> modifiers for each attempt and hard failure, but call “I want to Recall
+> modifiers for each attempt and critical failure, but call “I want to Recall
 > Knowledge to use my `Action or Feat Name`” to ignore the difficulty modifier
-> and hard failure and get no information on success. However, they get the
+> and critical failure and get no information on success. However, they get the
 > effect of the Action or Feat they use.
 
 ## Access to Summoned Creatures
@@ -141,7 +141,8 @@ following books as they represent common knowledge for most characters:
   book are common knowledge to you)
 
 If you want to summon a creature outside of these sources or a creature with a
-rarity other than common, you must make a hard Recall Knowledge (DC+2) based on
+rarity other than common, you must make a Recall Knowledge check with a Hard DC
+adjustment based on
 the creature's level, only once per unique creature. You can retry the Recall
 Knowledge once you gain a new level; its difficulty increases with each
 following attempt as normal. If you succeed, you recollect that you have
@@ -149,7 +150,7 @@ observed or studied the creature in detail and can summon it from now on with
 no further checks. If you fail, you do not know the creature and need to find a
 specimen to observe or study its anatomy or a source of research that details
 its physiology and behavior in detail (using indirect sources of information
-increases the difficulty to very hard, DC+5).
+calls for a Very Hard DC adjustment).
 
 ## Sickened Out of Combat
 
@@ -176,9 +177,9 @@ full night's rest.
 
 If a character fails at a Force Open check to break a door or a container
 outside of combat, they fail to open it on the first try within a few seconds.
-The DM may grant the character an automatic success if they commit to 30
+The GM may grant the character an automatic success if they commit to 30
 seconds of uninterrupted Force Open activity. If the player needs to roll 15 or
-more to succeed, the DM may increase the duration of the activity to 1 minute;
+more to succeed, the GM may increase the duration of the activity to 1 minute;
 if they need 18 or more the duration may be increased up to 5 minutes; if they
 need to roll 20 to succeed the duration may be increased up to 10 minutes.
 After the activity duration ends, the character gets the success result but
@@ -232,7 +233,7 @@ complexity of managing one more creature on the combat map.
 At any moment of exploration outside combat, the master can choose one of
 three modes for their familiar presence during combat - Reach, Near, and Far.
 It is suggested that one mode is selected by default. Unless the master is
-Surprised or Distracted when rolling for initiative, they can instruct their
+surprised or distracted when rolling for initiative, they can instruct their
 familiar to switch to any other mode usually by hearing or gesture if there’s
 line of sight. During combat, the master can spend ◆ Command action to make
 their familiar switch to a different mode, and the familiar spends several

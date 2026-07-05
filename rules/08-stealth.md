@@ -12,8 +12,8 @@ of any creature that may notice you as you travel.
 **Success** You're undetected by the creature and are also typically unnoticed
 by the creature.
 
-**Failure** The creature takes notice of your presence. You lose the unnoticed
-condition if you had it.
+**Failure** The creature takes notice of your presence. You are no longer
+unnoticed if you were unnoticed.
 
 Creatures that notice you during exploration can lead to different outcomes. If
 hostile creatures notice you, an encounter is likely to start as a response.
@@ -26,16 +26,18 @@ action, the result is always a critical failure.
 
 ## Distracted Creatures
 
+This section introduces the distracted homebrew condition.
+
 Creatures that are Refocusing, Searching, Investigating, Treating Wounds,
 Repairing, Detecting Magic, Identifying Magic, Repeating a Spell, Following the
 Expert, Hustling, Cover Tracks, or busy with another activity that has their
-full attention away from a potential threat, are considered Distracted when
+full attention away from a potential threat gain the distracted condition when
 engaged by undetected or hidden hostile creatures. Characters who are Aiding
-another character who is engaged in an action that would make the Distracted.
-The same applies to creatures who are the target of a Ready action from an
-undetected hostile creature. Distracted creatures suffer a -4 circumstance
-penalty to Perception checks and initiative rolls and can only use Perception
-for initiative rolls.
+another character engaged in an action that would make them distracted also
+become distracted. The same applies to creatures who are the target of a Ready
+action from an undetected hostile creature. Distracted creatures take a -4
+circumstance penalty to Perception checks and initiative rolls and can use only
+Perception for initiative rolls.
 
 The following actions never distract you: Avoid Notice, Defend, Scout, and
 Track.
@@ -53,15 +55,15 @@ Blows, Lunge or Quick Draw). You can trigger that Readied action before the
 initiative is rolled if you are Undetected or Hidden from the hostile target,
 or you are Observed but the target do not expect imminent aggression from you.
 
-Creatures attacked out of initiative with a Readied action are considered
-Surprised. When a creature is Surprised, it is off-guard to the attack and
+Creatures attacked out of initiative with a Readied action are surprised. When
+a creature is surprised, it is off-guard to the attack and
 suffers a -4 circumstance penalty to initiative and can only use Perception for
 initiative rolls.
 
 Any of your allies can also Ready an action, as long as there's enough time and
 preparation, such as communicating the plan of an ambush for at least 1
 minute. However, once you trigger your Ready action and initiative is rolled,
-only allies that have initiative order equal or higher than the Surprised
+only allies that have initiative order equal or higher than the surprised
 creatures can use their Ready actions before combat starts normally.
 
 The reactions happen simultaneously in the order of your choice. After all
@@ -81,7 +83,7 @@ Typically, Ready an action is not a Subtle action and telegraphs intent. While
 it doesn’t matter for the purpose of Surprise as typically the target needs to
 treat you as Undetected or Hidden or incapable of planning an attack, it may be
 obvious to creatures that Observe you can tell you are preparing to do
-something as a reaction in the spark of a moment. The DM may allow a Deception
+something as a reaction in the spark of a moment. The GM may allow a Deception
 check against the highest among the Perception DC of all Observing creatures to
 hide your intent in innocuous activity but this makes any check as part of the
 Readied action with a -2 circumstance penalty.
@@ -97,8 +99,8 @@ Readied action with a -2 circumstance penalty.
 If the ambushing character chooses to Ready a Command action, the commanded
 companion or familiar (or other creatures with the minion tag, such as summoned
 creatures or raised undead) only acts before combat starts if their initiative
-is equal or higher than any Surprised creatures. Also, they can only Strike or
-use Support against Surprised creatures.
+is equal or higher than any surprised creatures. Also, they can only Strike or
+use Support against surprised creatures.
 
 Independent Familiars who have ◆ each turn without a Command, can Ready an
 action similar to ally coordinating an ambush. Typically, Familiars cannot
@@ -108,7 +110,7 @@ activate a Hazard Trap, or Pass to Ally an item they are holding).
 > **Why the Change?** Using ◆ Command to get ◆◆ for a companion is a case of
 > too much benefit squeezed into ambush. This is why the companion is treated
 > as an ally coordinating an ambush, and its targets are further limited to only
-> successfully Surprised targets.
+> successfully surprised targets.
 
 ## Sneaking in Enemy Proximity
 
