@@ -200,6 +200,21 @@ The Market Level is the lower of the following.
 
 This represents the scale of the market the caravan can currently exploit.
 
+### Hub Adjacency
+
+Some settlements function above their usual scale because they sit close to a
+major trade hub, port, or magical center and are tied into its traffic.
+
+When a settlement has unusually strong access to a nearby major market, the GM
+can treat it as 1 level higher when determining Market Level for caravans,
+comfortable trade, and mediated orders. This should be used for places that are
+regularly supplied by larger markets, not merely for towns with occasional
+travelers.
+
+Otari near Absalom is a good example of this rule. It remains a small town, but
+its access to Absalom's traffic, agents, and commissioned trade makes it behave
+as a somewhat stronger market than an equally sized remote settlement.
+
 ## Buying from a Caravan
 
 Ordinary purchases can be resolved at listed price. If haggling matters, use
@@ -230,10 +245,19 @@ standing stock. They must be obtained as special orders through private factors,
 distant suppliers, or personal courier delivery. Such orders usually require
 prepayment, extra delivery fees, waiting time, or all three.
 
+As a default, a mediated order requires at least 20% prepayment, at least 5 gp
+plus 5% of the order's price in courier or brokerage fees, and a delivery time
+measured in days rather than hours. The GM should also treat mediated orders as
+less certain than standing stock. A supplier can fail to secure the goods,
+raise the final price, arrive late, or require the buyer to wait for the next
+caravan run.
+
 Items that are always in broad demand are the main exception. A caravan can
 still buy, carry, and use staple goods such as basic healing potions, common
-ammunition, lamp oil, rope, and other supplies that remain useful regardless
-of the caravan's level.
+ammunition, lamp oil, rope, rations, feed, and other routine field supplies
+that remain useful regardless of the caravan's level. This exception should be
+kept narrow. It covers dependable staples, not every low-level consumable or
+minor magical convenience.
 
 This creates a simple default ladder.
 
@@ -335,6 +359,12 @@ Choose one route category.
 | Ordinary | +0 |
 | Dangerous | -1 |
 | War-torn, monster-haunted, or highly unstable | -2 |
+
+Even the best caravan cannot erase all route friction. Weather, politics,
+bridge failures, ferries, inspections, hostile attention, and magical hazards
+still shape the road. Route improvements, escort perks, and convoy perks can
+raise a route's category, but no route can be improved above Protected or
+heavily patrolled.
 
 ### Step 3: Determine Cargo Fit
 
@@ -680,8 +710,8 @@ If you want journeys to feel more dynamic, roll 1d12 once per trade journey.
 | --- | --- |
 | 1 | Bandits, monsters, or sabotage. Lose 10% of Invested Cargo before resolving the trade check. |
 | 2 | Spoilage, breakage, or animal loss. Lose 5% of Invested Cargo before resolving the trade check. |
-| 3 | Tariffs, bribes, or emergency repairs. Reduce final profit by 5% of Invested Cargo. |
-| 4 | Delay. No direct effect, but the caravan arrives late and may miss a story opportunity. |
+| 3 | Tariffs, bribes, inspections, or emergency repairs. Reduce final profit by 5% of Invested Cargo. |
+| 4 | Delay from weather, road damage, ferries, or official interference. No direct profit effect, but the caravan arrives late and may miss a story opportunity. |
 | 5-8 | Uneventful journey. |
 | 9 | Favorable rumor. Gain a +1 circumstance bonus to the trade check. |
 | 10 | Strong market. Increase final profit by 5% of Invested Cargo. |

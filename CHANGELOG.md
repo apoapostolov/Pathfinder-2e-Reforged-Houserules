@@ -2,6 +2,18 @@
 
 All notable updates to the houserules are recorded here.
 
+## 2026-07-05
+
+- Added the *Caravan Trade Subsystem* in `subsystems/`, including rules for
+  caravan stock, working capital, mediated orders, trade journeys, route
+  demand, recurring merchants, and campaign-ready Otari caravan examples.
+- Expanded the caravan rules with perk progressions, VTT-ready budget formulas,
+  stronger item-access guardrails, and trade friction that better matches both
+  Pathfinder 2e balance and a high-magic caravan economy.
+- Rewrote the project introduction so `README.md` presents *Pathfinder 2e
+  Reforged* as Apostol Apostolov's house-rule framework rather than just a file
+  index.
+
 ## 2024-12-16
 
 - Clarified the opening guidance for the remaster rules so the relevant DC

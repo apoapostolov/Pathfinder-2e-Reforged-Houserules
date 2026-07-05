@@ -1,7 +1,21 @@
 # Pathfinder 2e Reforged Houserules
 
-Canonical Markdown reference for the Pathfinder 2e house rules that were
-previously maintained in Notion.
+*Pathfinder 2e Reforged* is a house-rule framework by Apostol Apostolov. It is
+written for groups that still value the core design intent of legacy
+*Pathfinder 2e*, but want a more decisive answer to the remaining pain points
+of *Pathfinder 2e Remaster*.
+
+The goal of Reforged is not to replace Pathfinder with a different game. It is
+to preserve the strengths that make Pathfinder 2e worth playing in the first
+place: tactical clarity, meaningful build choices, firm mechanical structure,
+and a world where player options matter because the rules behind them matter.
+Where Reforged departs from published rules, it does so on purpose and with a
+clear bias toward table usability, stronger internal logic, and sharper support
+for long-form campaign play.
+
+This repository is the canonical Markdown edition of the ruleset. It replaces
+the earlier Notion draft with a version that is easier to review, diff,
+maintain, and publish.
 
 ## Contents
 
@@ -16,6 +30,7 @@ previously maintained in Notion.
 - [Crafting & Gear](rules/09-crafting-gear.md)
 - [Magic](rules/10-magic.md)
 - [Magic Items](rules/11-magic-items.md)
+- [Caravan Trade Subsystem](subsystems/caravans_of_golarion.md)
 - [Pathfinder Arena](appendix/pathfinder-arena.md)
 - [PathHammer - Grim Survival Rules](appendix/pathhammer-grim-survival-rules.md)
 - [Unicode PF2 Symbols](appendix/unicode-pf2-symbols.md)
@@ -23,8 +38,10 @@ previously maintained in Notion.
 
 ## Notes
 
-- These files are organized to make the rules easy to review, diff, and
-  maintain outside Notion.
-- Appendix material is kept separate from the core houserules chapters.
-- The changelog is maintained in `CHANGELOG.md` instead of being embedded in the
-  index.
+- The `rules/` directory contains the main Reforged rules chapters.
+- The `subsystems/` directory contains optional but supported systems that plug
+  into the core ruleset.
+- The `appendix/` directory contains side modules, reference material, and
+  campaign-specific support content.
+- The changelog is maintained in `CHANGELOG.md` rather than embedded in the
+  main index.
