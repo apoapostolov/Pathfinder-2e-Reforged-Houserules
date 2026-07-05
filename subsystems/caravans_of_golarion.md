@@ -2,13 +2,13 @@
 
 # Caravan Trade Subsystem
 
-This subsystem models caravans as recurring mobile businesses rather than as
-static merchants. It is intended for GM use. Players should usually see only
-the results: what a caravan has for sale, how much coin it can spend, what
-goods are in demand, and whether a familiar caravan has prospered or fallen on
-hard times since the last time the party met it.
+This subsystem treats caravans as recurring businesses rather than static
+merchants. It is written for the GM. Players will usually see only the result:
+what a caravan has for sale, how much coin it can spend, what goods are in
+demand, and whether a familiar caravan has prospered or fallen on hard times
+since the party last saw it.
 
-This subsystem serves four purposes.
+Use it for four things.
 
 - It determines how much coin a caravan can spend when the PCs want to sell.
 - It determines what kinds of supplies and items a caravan currently offers.
@@ -17,8 +17,8 @@ This subsystem serves four purposes.
   living world.
 
 Use [Assess Value or Negotiate](../rules/06-exploration-actions.md) whenever
-the PCs haggle over prices. This subsystem does not replace that activity; it
-supplies the business logic behind it.
+the PCs haggle over prices. This subsystem does not replace that activity. It
+provides the business logic behind it.
 
 ## Using This Subsystem
 
@@ -66,9 +66,9 @@ Every caravan has the following statistics.
 
 ## Caravan Progression
 
-This subsystem assumes that caravans important enough to matter in play begin
-at 3rd level. Smaller peddlers, isolated drovers, and one-wagon traders usually
-work better as ordinary merchants without subsystem tracking.
+Caravans important enough to matter in play usually begin at 3rd level.
+Smaller peddlers, isolated drovers, and one-wagon traders usually work better
+as ordinary merchants without subsystem tracking.
 
 | Level | Mercantile Lore | Trade DC | Base Working Capital | Provision Stock | General Stock | Specialty Stock |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
@@ -81,9 +81,8 @@ work better as ordinary merchants without subsystem tracking.
 | 9 | +22 | 32 | 2,400 gp | 320 gp | 700 gp | 480 gp |
 | 10 | +24 | 34 | 3,600 gp | 450 gp | 1,000 gp | 700 gp |
 
-These numbers represent a healthy baseline, not a promise. A caravan that was
-raided last week, recently made a major investment, or is flush with coin from
-a spectacular run can vary significantly.
+These numbers are a baseline. A caravan that was raided last week, made a major
+investment, or just finished a very profitable run can vary quite a bit.
 
 ## Current Liquidity
 
@@ -108,9 +107,8 @@ change its level, routes, or total assets.
 If you use a VTT and want a single roll formula for a caravan's available funds
  on arrival, use the following table instead of the liquidity table above.
 
-These formulas intentionally produce a spread around the same baseline values
-used by this subsystem while keeping results easy to roll in Foundry or a
-similar VTT.
+These formulas produce a spread around the same baseline values while staying
+easy to roll in Foundry or a similar VTT.
 
 | Level | VTT Working Capital Formula |
 | --- | --- |
@@ -142,7 +140,7 @@ Round adjusted stock pools to the nearest 5 gp.
 | Salvage Dealer | Scrap, trophies, monster parts, reclaimed gear, alchemical salvage | Provision Stock × 0.75; General Stock × 1; Specialty Stock × 1.25 |
 
 Profiles do not change the caravan's level or Working Capital. They change the
-kind of business the caravan does.
+kind of business it does.
 
 ## Stock Pools and Item Availability
 
@@ -221,11 +219,36 @@ The GM should not let PCs strip a caravan of all mundane necessities unless the
 price paid and the fiction support it. A caravan still needs enough of its own
 provisions to stay on the road.
 
+### Trade Ceiling and Mediated Orders
+
+Caravans do not usually buy or stock individual commoditized or low-quality
+items whose level is 4 or more below the caravan's level.
+
+A caravan normally trades items up to its own level. It can also mediate access
+to items up to 2 levels above its own level, but those goods are not part of its
+standing stock. They must be obtained as special orders through private factors,
+distant suppliers, or personal courier delivery. Such orders usually require
+prepayment, extra delivery fees, waiting time, or all three.
+
+Items that are always in broad demand are the main exception. A caravan can
+still buy, carry, and use staple goods such as basic healing potions, common
+ammunition, lamp oil, rope, and other supplies that remain useful regardless
+of the caravan's level.
+
+This creates a simple default ladder.
+
+- Refuse individual items of caravan level - 4 or lower
+- Routinely trade items up to caravan level
+- Mediate special orders up to caravan level + 2
+
+The GM can also waive the refusal threshold for bulk cargo, salvage lots,
+profile-defining goods, or items in unusually strong demand on that route.
+
 ## Selling to a Caravan
 
 When the PCs sell to a caravan, use [Assess Value or
 Negotiate](../rules/06-exploration-actions.md) to determine the final price.
-This subsystem answers three additional questions.
+The subsystem adds three questions.
 
 ### Can the caravan afford the purchase?
 
@@ -265,14 +288,12 @@ exceptional.
 Subtract the final purchase price from the caravan's Working Capital and add
 that amount to its Invested Cargo.
 
-The caravan has now converted liquid buying power into cargo it intends to
-resell elsewhere.
+The caravan has converted liquid buying power into cargo for resale elsewhere.
 
 ## Destination Demand
 
-To make the world feel alive, assign settlements and routes one or two strong
-demand tags. This affects both what caravans carry into an area and what they
-prefer to buy before leaving it.
+Assign settlements and routes one or two strong demand tags. This affects both
+what caravans bring into an area and what they prefer to buy before leaving it.
 
 | Destination or Route | Usually High Demand | Usually Weak Demand |
 | --- | --- | --- |
@@ -295,7 +316,7 @@ to another market, conducting business there, and returning with its affairs
 resolved. In most campaigns this takes 3 to 14 days, but remote routes may take
 far longer.
 
-Trade journeys are resolved off-screen unless the journey itself becomes an
+Resolve trade journeys off-screen unless the journey itself becomes an
 adventure.
 
 ### Step 1: Choose the Destination
@@ -378,16 +399,15 @@ The caravan does not instantly gain its new Base Working Capital in coin. Use
 the new value the next time you roll liquidity after a completed trade journey
 or major financial reset.
 
-Leveling up represents better routes, more employees, stronger contracts,
-greater access to capital, and a wider reputation.
+Leveling up reflects better routes, more employees, stronger contracts, greater
+access to capital, and a wider reputation.
 
 ## Caravan Perks
 
-Each time a caravan gains a level, it also gains one perk. Perks represent the
-way that caravan has chosen to grow. Some caravans expand their route
-discipline and transport capacity, some become harder targets, some learn to
-carry dangerous or delicate cargo, and some turn themselves into social events
-that attract crowds wherever they stop.
+Each time a caravan gains a level, it also gains one perk. Perks show how that
+caravan has chosen to grow. Some improve discipline and carrying capacity.
+Some make the caravan harder to attack. Some specialize in dangerous or
+delicate cargo. Others turn the caravan into an attraction in its own right.
 
 Unless a perk says otherwise, a caravan cannot take the same perk more than
 once.
@@ -395,94 +415,142 @@ once.
 The GM should choose perks that match the caravan's story, staff, patrons,
 route, and profile rather than selecting them at random.
 
+Some perks list a minimum caravan level. These usually require the staff,
+capital, equipment, or regional influence to support them.
+
 ### Logistics Perks
 
 #### Efficient Quartermasters
 
 The caravan's records, loading plans, and supply discipline are unusually good.
+Its ledgers are current, its cargo marks are consistent, and its handlers know
+exactly which wagon holds lamp oil, flour, spare tack, or winter blankets.
 
 - Increase Provision Stock by 25%.
 - Increase General Stock by 10%.
 - The caravan ignores the first 10 gp of Provision Stock that would otherwise
   be depleted by ordinary rural trade during a visit.
+- Teamsters, porters, and quartermasters quickly recognize this caravan as one
+  that packs honestly and wastes little.
 
 #### Reliable Teamsters
 
+Minimum Level 4
+
 The caravan has disciplined drivers, spare animals, and better route planning.
+Its drivers know where wheels bog down in spring, where bridges are weak, and
+which inns still honor old teamster contracts.
 
 - Gain a +1 circumstance bonus to trade checks during Trade Journeys.
 - Treat ordinary routes as protected or heavily patrolled for the purpose of
   route modifiers.
+- Stables, ferrymen, and road wardens usually treat this caravan as seasoned
+  traffic rather than green travelers.
 
 #### Warehouse Ties
 
-The caravan has stable suppliers and off-route storage arrangements.
+Minimum Level 4
+
+The caravan has stable suppliers and off-route storage arrangements. Its
+factors keep keys, seals, and standing agreements in market towns beyond the
+main road.
 
 - Increase Base Working Capital by 10%.
 - When determining current liquidity, treat a result of 1 as 2.
+- Merchants and warehouse clerks are more likely to know this caravan's marks
+  and accept its letters, tallies, and promises as legitimate.
 
 #### Broad Load Discipline
 
 The caravan is unusually good at packing mixed cargo without losing efficiency.
+Its wagons use nested crates, compartment frames, and careful loading order to
+keep salt from tainting grain, tools from bruising fruit, and fine cloth from
+traveling beside muddy salvage.
 
 - Increase Comfortable Trade Value by 25% when checking market saturation for
   this caravan.
 - The caravan can carry one additional cargo tag without taking the normal poor
   fit penalty during a Trade Journey.
+- Inspectors and rival merchants can often tell at a glance that this caravan's
+  loads were arranged by professionals.
 
 ### Defense Perks
 
 #### Hardened Guards
 
 The caravan employs better guards, tougher outriders, or more experienced
-watch captains.
+watch captains. Its sentries rotate properly, its outriders scout ahead, and
+its guards know how to form a line around panicked animals before a raid
+becomes a rout.
 
 - Treat dangerous routes as ordinary for the purpose of route modifiers.
 - If you use Optional Trade Events, reduce cargo loss from bandits, monsters,
   or sabotage by 5% of Invested Cargo.
+- Villagers, toll keepers, and roadside traders usually think twice before
+  mistaking this caravan for an easy mark.
 
 #### Veteran Escort
 
+Minimum Level 5
+
 The caravan travels with a respected escort force or contracted mercenaries.
+These are not merely armed drovers but known professionals with reputations,
+captains, and preferred marching orders.
 
 - Gain a +2 circumstance bonus to Trade DC against coercive or openly hostile
   price pressure.
 - If the caravan suffers a critical failure on a Trade Journey, you can reduce
   it to a failure once per arrival cycle.
+- Gate wardens, lesser officials, and petty extortionists usually recognize
+  that this caravan is costly to pressure and dangerous to cross.
 
 #### Secure Camp Routine
 
 The caravan is hard to raid while encamped and keeps better night discipline.
+Its wagons are circled with purpose, its lanterns are hooded, and its cooks,
+guards, and drovers all know the camp signals.
 
 - If you use Optional Trade Events, a result of 1 on the event table becomes a
   result of 2 instead.
 - Rural settlements and roadside camps treat the caravan as one step safer and
   more respectable for first impressions.
+- Hosts, reeves, and village elders are more willing to let this caravan camp
+  near mills, shrines, or pasture land.
 
 ### Special Cargo Perks
 
 #### Warded Compartments
 
 The caravan has invested in sealed chests, treated linings, or magical
-stabilization for fragile goods.
+stabilization for fragile goods. Some wagons carry resin-lined drawers, padded
+book cases, cooled alchemical lockers, or iron-bound cabinets marked with chalk
+sigils and guild seals.
 
 - Increase Specialty Stock by 25%.
 - The caravan can transport one category of delicate cargo without it counting
   as a poor fit solely because of fragility, contamination risk, or spoilage.
+- Scholars, apothecaries, and collectors usually regard the caravan as a safer
+  handler of delicate property than ordinary drovers.
 
 Examples include alchemical goods, preserved monster parts, ritual supplies,
 rare books, unstable salvage, or other similarly delicate cargo.
 
 #### Arcane Caravan Guards
 
+Minimum Level 5
+
 The caravan employs battle mages, abjurers, or ritual specialists to defend
-high-value loads.
+high-value loads. Its sealed wagons are watched by spellwardens, glyph-cutters,
+and practical adepts who know which threats are steel, which are curses, and
+which call for ritual precautions instead.
 
 - The caravan can safely carry magically protected cargo.
 - Goods that are especially vulnerable to theft, magical tampering, or hostile
   environments do not take the usual penalty for obvious risk.
 - If you use Optional Trade Events, magical sabotage, spoilage from ambient
   magic, or similar supernatural mishaps can be ignored once per Trade Journey.
+- Temples, arcane colleges, and noble agents are more likely to entrust sealed
+  commissions to a caravan known to travel with proper wards.
 
 This perk is ideal for caravans that move spellbooks, rare reagents, cursed
 objects under seal, unstable relics, diplomatic treasures, or other cargo that
@@ -490,8 +558,12 @@ ordinary guards are not enough to protect.
 
 #### Sanctuary Cages
 
+Minimum Level 4
+
 The caravan has custom cages, reinforced shrines, holy seals, padded frames, or
-other built environments suited to special transport.
+other built environments suited to special transport. It may contain relic
+shrines on suspension frames, beast wagons with feeding hatches, or traveling
+alchemical labs built to survive rutted roads.
 
 - Choose one category of special cargo the caravan is built to carry, such as
   live beasts, holy relics, hazardous alchemy, funerary remains, or noble
@@ -499,38 +571,55 @@ other built environments suited to special transport.
 - While carrying that category, the caravan gains a +1 circumstance bonus to
   trade checks for Trade Journeys.
 - Buyers seeking that category treat the caravan as one step more reputable.
+- People familiar with that trade usually know this caravan by sight, nickname,
+  or the distinctive shape of its special wagons.
 
 ### Entertainment Perks
 
 #### Caravan Festival
 
 The caravan brings musicians, cooks, performers, or novelty attractions that
-turn its arrival into an event.
+turn its arrival into an event. Children run ahead of it, villagers prepare
+extra tables, and its cookfires and lantern strings are recognized from the
+road.
 
 - Rural settlements, villages, and small towns usually have a favorable initial
   attitude toward the caravan unless there is a reason not to.
 - Increase Provision Stock sales opportunities by 25% during visits to
   under-supplied or isolated communities.
+- The caravan usually picks up local gossip, songs, petitions, and invitations
+  more quickly than a purely mercantile outfit.
 
 #### Carnival Train
 
+Minimum Level 5
+
 The caravan includes games, stage acts, curiosities, beasts, or traveling
-spectacles that draw paying crowds.
+spectacles that draw paying crowds. Painted wagons, drummers, illusionists,
+trained animals, and barkers turn a stopover into a fairground.
 
 - Increase Working Capital by 10% after any successful Trade Journey whose
   destination is a village, town, pilgrimage route, or festival site.
 - The caravan can justify carrying one additional Luxury cargo tag without it
   feeling out of place in poor or rural regions.
+- Local officials, innkeepers, and shrine custodians may welcome the caravan
+  for the coin and excitement it reliably brings.
 
 #### Beloved Entertainers
 
-The caravan has become a known social institution on part of its route.
+Minimum Level 4
+
+The caravan has become a fixture on part of its route. Its performers are
+remembered by name, its old banners are recognized from afar, and its return
+marks the season as surely as a local market day.
 
 - When this caravan returns to a settlement that has seen it before, treat the
   caravan as having a favorable reputation unless the campaign fiction says
   otherwise.
 - The GM can treat one weak-demand result for Luxury or novelty goods as normal
   demand in communities that look forward to the caravan's arrival.
+- Communities along its route may keep stories, rivalries, romances, and
+  standing invitations connected to the caravan from one visit to the next.
 
 ### Advanced Perks
 
@@ -538,9 +627,11 @@ The following perks are best for caravans of 6th level or higher.
 
 #### Regional Trade Network
 
-Prerequisite: Warehouse Ties or Reliable Teamsters
+Prerequisites: 6th level, Warehouse Ties or Reliable Teamsters
 
-The caravan has become part of a wider and more resilient commercial web.
+The caravan has become part of a wider commercial web. Its masters exchange
+couriers, debt tallies, and sealed memoranda with distant factors who may never
+ride the same road themselves.
 
 - Increase Base Working Capital by 15%.
 - Gain a +1 circumstance bonus to Mercantile Lore checks made for Trade
@@ -548,29 +639,38 @@ The caravan has become part of a wider and more resilient commercial web.
 - Once per arrival cycle, the caravan can count the destination settlement as
   1 level higher for determining Market Level, to a maximum of the caravan's
   own level.
+- Harbor clerks, guild agents, and tax collectors are more likely to treat this
+  caravan as part of a recognized regional enterprise.
 
 #### Iron Road Convoy
 
-Prerequisite: Hardened Guards
+Prerequisites: 6th level, Hardened Guards
 
 The caravan has grown into a disciplined convoy with strong route control.
+Scouts ride ahead, standards mark the lead wagons, and hostile bands know this
+company has crossed dangerous country before and intends to do so again.
 
 - Treat dangerous routes as protected or heavily patrolled for the purpose of
   route modifiers.
 - If you use Optional Trade Events, results of 1 or 2 each become 3 instead.
+- Smaller merchants may try to attach themselves to this caravan's wake when
+  crossing troubled country.
 
 #### Grand Procession
 
-Prerequisite: Caravan Festival or Carnival Train
+Prerequisites: 6th level, Caravan Festival or Carnival Train
 
 The caravan is no longer just a merchant line but a public attraction in its
-own right.
+own right. Its arrival is announced in advance, its banners are copied by
+children, and some settlements rearrange market days to match its route.
 
 - Increase Specialty Stock by 20%.
 - Villages and towns usually count as one step more receptive to the caravan's
   arrival.
 - After a successful Trade Journey to a rural, frontier, or pilgrimage
   destination, increase final profit by an additional 5% of Invested Cargo.
+- Nobles, priests, and magistrates may seek the procession's presence for holy
+  days, civic celebrations, and politically useful displays of prosperity.
 
 ## Optional Trade Events
 
@@ -609,8 +709,8 @@ Caravans should also remember previous deals.
 - A caravan that repeatedly profits from a region should become more recognizable
   there, with better security and more reliable stock.
 
-This is where the subsystem stops being a merchant table and starts feeling
-like part of the campaign world.
+Handled this way, a caravan becomes part of the campaign world rather than just
+another merchant table.
 
 ## Quick Caravan Creation
 
@@ -648,3 +748,102 @@ easily sell food, fodder, rope, tents, common ammunition, and similar travel
 staples. It is also likely to buy preserved food, alchemical field supplies,
 beast feed, or other practical goods before departing for a mining camp deeper
 in the hills.
+
+## Example Caravans for Otari
+
+The following caravans are written for campaigns centered on Otari, including
+an *Abomination Vaults* campaign. Otari is a small fishing and timber town near
+Absalom. Caravans that visit it usually come looking for fish, timber, rope,
+tar, common provisions, and adventuring salvage, while bringing in finished
+goods, better tools, weapons, luxuries, and commissioned items from larger
+markets.
+
+These entries preserve older roll formulas for arrival cadence, length of stay,
+delivery time, and budget. Those formulas predate this subsystem, but the
+listed caravan levels are the correct levels to use in play.
+
+### Narin Alveri's Absalom Circuit
+
+Narin Alveri runs a well-established circuit between Absalom, Otari, and
+Meravon before returning home to Absalom. In Otari, this caravan is the most
+reliable source of expensive imports, commissioned gear, and mediated orders
+that the local market cannot normally support.
+
+- Home Market: Absalom
+- Route: Absalom -> Otari -> Meravon -> Absalom
+- Profile: Outfitter
+- Owner: Narin Alveri
+- Terms: 20% prepaid; 5 gp + 5% courier delivery in `[[/gmroll 1d4+1]]` days
+- Applicable Perks at 6th Level: `Reliable Teamsters`, `Warehouse Ties`,
+  `Veteran Escort`
+- Applicable Perks at 7th Level: `Reliable Teamsters`, `Warehouse Ties`,
+  `Veteran Escort`, `Regional Trade Network`
+
+When this caravan arrives in Otari on its regular circuit, use the following
+6th-level state.
+
+- Level 6
+- Trade DC 26
+- Arrives Each: `[[/gmroll 2d6+8]]` days
+- Stays: `[[/gmroll 1d3]]` days
+- Budget: `[[/gmroll 1120+(20d10-110)]]` gp
+
+When the same caravan leaves Absalom on a heavier and better-supplied outbound
+run, use the following 7th-level state.
+
+- Level 7
+- Trade DC 28
+- Arrives Each: `[[/gmroll 1d6+8]]` days
+- Stays: `[[/gmroll 1d3]]` days
+- Budget: `[[/gmroll 1120+(20d10-110)]]` gp
+
+This is the natural caravan to handle expensive commissions, high-end imports,
+and mediated orders beyond what Otari can normally support on its own.
+
+### Tawen Keefrow's Meravon Caravan
+
+Tawen Keefrow, a 5th-level halfling merchant, runs a smaller but steady
+Meravon line. In Otari, Tawen's caravan works best as a practical mixed
+merchant: useful finished goods, modest imports, and enough flexibility to buy
+interesting cargo without operating on Narin's scale.
+
+- Home Market: Meravon
+- Route: Meravon -> Otari -> Meravon
+- Profile: General Trader
+- Owner: Tawen Keefrow (male halfling 5)
+- Terms: unknown
+- Applicable Perks: `Reliable Teamsters`, `Broad Load Discipline`
+- Level 5
+- Trade DC 24
+- Arrives Each: `[[/gmroll 1d4+6]]` days
+- Stays: `[[/gmroll 1d2]]` days
+- Budget: `[[/gmroll 700+(16d10-88)]]` gp
+
+This caravan suits mixed lots, ordinary imports, and the kind of worthwhile
+trade that exceeds what Otari's resident merchants can easily absorb but does
+not justify waiting for the Absalom circuit.
+
+### Garrik Vane's Diobel Buyers
+
+Garrik Vane is a rowdy human buyer out of Diobel who runs a blunt, fast-moving
+line between the river trade and the coast. His caravan is less refined than
+the Absalom and Meravon lines, but it is quick to buy salable goods, harder to
+bother with niceties, and willing to move on short margins if the cargo will
+turn over quickly in Diobel.
+
+- Home Market: Diobel
+- Route: Diobel -> Otari -> Diobel
+- Profile: General Trader
+- Owner: Garrik Vane (male human)
+- Terms: rough bargaining, fast payment, short stay
+- Applicable Perk: `Warehouse Ties`
+- Level 4
+- Trade DC 22
+- Buys up to 5th-level items
+- Arrives Each: `[[/gmroll 1d10+12]]` days
+- Stays: 1 day
+- Budget: `[[/gmroll 420+(12d10-66)]]` gp
+
+This line works well as a short-stay buyer that appears, makes a few loud deals,
+loads up quickly, and heads back toward Diobel before the town fully knows what
+it has sold.
