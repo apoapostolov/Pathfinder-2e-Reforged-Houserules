@@ -30,11 +30,14 @@ maintain, and publish.
 - [Crafting & Gear](rules/09-crafting-gear.md)
 - [Magic](rules/10-magic.md)
 - [Magic Items](rules/11-magic-items.md)
-- [Caravan Trade Subsystem](subsystems/caravans_of_golarion.md)
-- [Pathfinder Arena](appendix/pathfinder-arena.md)
-- [PathHammer - Grim Survival Rules](appendix/pathhammer-grim-survival-rules.md)
-- [Unicode PF2 Symbols](appendix/unicode-pf2-symbols.md)
-- [Changelog](CHANGELOG.md)
+
+- Subsystems
+  - [Caravan Trade Subsystem](subsystems/caravans_of_golarion.md)
+- Appendix
+  - [Pathfinder Arena](appendix/pathfinder-arena.md)
+  - [PathHammer - Grim Survival Rules](appendix/pathhammer-grim-survival-rules.md)
+  - [Unicode PF2 Symbols](appendix/unicode-pf2-symbols.md)
+  - [Changelog](CHANGELOG.md)
 
 ## Notes
 

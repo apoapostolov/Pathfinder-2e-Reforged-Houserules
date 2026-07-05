@@ -779,7 +779,7 @@ staples. It is also likely to buy preserved food, alchemical field supplies,
 beast feed, or other practical goods before departing for a mining camp deeper
 in the hills.
 
-## Example Caravans for Otari
+## Abomination Vaults Caravans for Otari
 
 The following caravans are written for campaigns centered on Otari, including
 an *Abomination Vaults* campaign. Otari is a small fishing and timber town near
