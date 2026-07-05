@@ -2,16 +2,11 @@
 
 # PathHammer - Grim Survival Rules
 
-<columns>
- <column>
-  <table_of_contents color="gray"/>
- </column>
- <column>
-  ## Limitations
-  ### Hit Points
-  After the 5th level, characters no longer gain hit points associated with level advancement. Boosts from feats like Toughness still accumulate to the characters' hit points total. In addition to feats, abilities can grant temporary or permanent hit points.
- </column>
-</columns>
+## Limitations
+
+### Hit Points
+
+After the 5th level, characters no longer gain hit points associated with level advancement. Boosts from feats like Toughness still accumulate to the characters' hit points total. In addition to feats, abilities can grant temporary or permanent hit points.
 
 > **Why the Change?** Limiting hit points is essential for maintaining the sense of a grim and perilous world, and vulnerability in combat is a massive part of that equation. Capping hit points for PCs and NPCs reduces the duration of combat and keeps the stakes high for everyone. As skills advance and abilities increase,, measuring one's opponents and the situation preceding combat becomes more critical. Abilities and items above level 10 are extremely rare and outside the bounds of acceptable threats, best dealt with on a tactical and military level rather than direct encounters.
 
