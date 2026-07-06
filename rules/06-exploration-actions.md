@@ -23,24 +23,30 @@ seller:
   on profit from buying low and selling high, or considers the price unfair,
   they may decide to haggle. If they do so, the DC is based on Will DC +2 for
   individual merchants and small shops, or Mercantile Lore DC (10 + Trade
-  Bonus) for caravans, guilds, and organized operations. Haggling is a general
-  shift of the tone that, if taken to extremes, can sour friendships or have
-  you thrown out of a shop, and the time of the negotiations changes to 10
-  minutes. Increase the difficulty modifier to +4 if the negotiation is a
-  particularly difficult one, or the buyer or seller is unfriendly or hostile.
+  Bonus) for traveling merchants, caravans, guilds, and organized operations.
+  Haggling is a general shift of the tone that, if taken to extremes, can sour
+  friendships or have you thrown out of a shop, and the time of the
+  negotiations changes to 10 minutes. Increase the difficulty modifier to +4 if
+  the negotiation is a particularly difficult one, or the buyer or seller is
+  unfriendly or hostile.
 
-| Guild / Caravan Level | Mercantile Lore | Trade Bonus DC |
+Level 1-2 entries are usually better treated as Traveling Merchants rather than
+full caravans. Their wealth is based on what a very rich merchant at that level
+can actually mobilize for trade, so their capital scales upward more slowly
+than the level 3-10 caravan progression.
+
+| Merchant / Caravan Level | Mercantile Lore | Trade Bonus DC |
 | --- | ---: | ---: |
-| 1 | +6 | 16 |
-| 2 | +8 | 18 |
-| 3 | +10 | 20 |
-| 4 | +12 | 22 |
-| 5 | +14 | 24 |
-| 6 | +16 | 26 |
-| 7 | +18 | 28 |
-| 8 | +20 | 30 |
-| 9 | +22 | 32 |
-| 10 | +24 | 34 |
+| Traveling Merchant 1 | +6 | 16 |
+| Traveling Merchant 2 | +8 | 18 |
+| Caravan or Guild 3 | +10 | 20 |
+| Caravan or Guild 4 | +12 | 22 |
+| Caravan or Guild 5 | +14 | 24 |
+| Caravan or Guild 6 | +16 | 26 |
+| Caravan or Guild 7 | +18 | 28 |
+| Caravan or Guild 8 | +20 | 30 |
+| Caravan or Guild 9 | +22 | 32 |
+| Caravan or Guild 10 | +24 | 34 |
 
 **Critical Success** As success and your excellent assessment allow you to
 negotiate the price in your favor by 5 percent plus 2 percent for each

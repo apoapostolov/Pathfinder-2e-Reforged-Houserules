@@ -67,11 +67,20 @@ Every caravan has the following statistics.
 ## Caravan Progression
 
 Caravans important enough to matter in play usually begin at 3rd level.
-Smaller peddlers, isolated drovers, and one-wagon traders usually work better
-as ordinary merchants without subsystem tracking.
+However, when the GM wants to model a recurring low-level trader with more
+precision than an ordinary merchant stat block provides, use the 1st- and
+2nd-level entries below and refer to them as Traveling Merchants rather than
+full caravans.
+
+These 1st- and 2nd-level entries are based on the liquid buying power of a
+very rich merchant at those levels rather than on the pooled assets, wagons,
+staff, and route infrastructure of a true caravan. Their wealth therefore
+scales upward more slowly than the level 3-10 caravan line.
 
 | Level | Mercantile Lore | Trade DC | Base Working Capital | Provision Stock | General Stock | Specialty Stock |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| 1 | +6 | 16 | 90 gp | 15 gp | 25 gp | 10 gp |
+| 2 | +8 | 18 | 170 gp | 25 gp | 45 gp | 20 gp |
 | 3 | +10 | 20 | 280 gp | 40 gp | 80 gp | 40 gp |
 | 4 | +12 | 22 | 420 gp | 60 gp | 120 gp | 60 gp |
 | 5 | +14 | 24 | 700 gp | 100 gp | 180 gp | 120 gp |
@@ -112,6 +121,8 @@ easy to roll in Foundry or a similar VTT.
 
 | Level | VTT Working Capital Formula |
 | --- | --- |
+| 1 | `/r 90 + (6d10 - 33)` |
+| 2 | `/r 170 + (8d10 - 44)` |
 | 3 | `/r 280 + (10d10 - 55)` |
 | 4 | `/r 420 + (12d10 - 66)` |
 | 5 | `/r 700 + (16d10 - 88)` |
