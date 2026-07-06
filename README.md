@@ -41,11 +41,16 @@ maintain, and publish.
   - [Unicode PF2 Symbols](appendix/unicode-pf2-symbols.md)
   - [Changelog](CHANGELOG.md)
 
+- WIP Drafts
+  - [Improved Cantrips](wips/improved_cantrips.md)
+
 ## Notes
 
 - The `rules/` directory contains the main Reforged rules chapters.
 - The `subsystems/` directory contains optional but supported systems that plug
   into the core ruleset.
+- The `wips/` directory contains working drafts that are not yet part of the
+  main published ruleset.
 - The `appendix/` directory contains side modules, reference material, and
   campaign-specific support content.
 - The changelog is maintained in `CHANGELOG.md` rather than embedded in the
