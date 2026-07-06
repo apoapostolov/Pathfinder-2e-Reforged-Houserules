@@ -66,13 +66,14 @@ Source: Rage of Elements
 **Range** 10 feet; **Targets** 1 object (cook, **draw,** lift, or tidy only)
 **Duration** sustained
 The simplest magic does your bidding. You can perform simple magical effects for as long as you Sustain the spell. Each time you Sustain the spell, you can choose one of four options.
-• **Cook** Cool, warm, or flavor 1 pound of nonliving material.
-**• Draw You make a color, a small mark, or a symbol appear on an object or a surface no larger than 3 inches. It can be removed with 1 minute of scrubbing and remains until your next spell preparation**. **You can maintain up to four such drawings, and additional casting of this effect makes the oldest to disappear.****
-****• Emit Create an instantaneous, harmless sensory effect, such as a kindling of fire, a shower of sparks, a puff of wind, a wood creaking, faint musical notes, or an odd odor. They can be heard or felt within 10 feet of the caster.****
-****• Imagine Create a temporary illusion that takes the form of your thoughts and memories you focus on, such as the face of a person you’ve met, a coarse map of a location you’ve studied, a crude illustration from memory, or a vague representation of a live scene you have observed. You can make changes to the illusion each time you Sustain the spell.**
-• **Lift** Slowly lift an unattended object of light Bulk or less 1 foot off the ground.
-• **Make** Create a temporary object of negligible Bulk, made of congealed magical substance. The object looks crude and artificial and is extremely fragile — it can’t be used as a tool, weapon, locus, or cost for a spell.
-• **Tidy** Color, clean, or soil an object of light Bulk or less. You can affect an object of 1 Bulk with 10 rounds of concentration, and a larger object a 1 minute per Bulk.
+
+- **Cook** Cool, warm, or flavor 1 pound of nonliving material.
+- **Draw** You make a color, a small mark, or a symbol appear on an object or a surface no larger than 3 inches. It can be removed with 1 minute of scrubbing and remains until your next spell preparation. You can maintain up to four such drawings, and additional casting of this effect makes the oldest disappear.
+- **Emit** Create an instantaneous, harmless sensory effect, such as a kindling of fire, a shower of sparks, a puff of wind, a wood creaking, faint musical notes, or an odd odor. They can be heard or felt within 10 feet of the caster.
+- **Imagine** Create a temporary illusion that takes the form of your thoughts and memories you focus on, such as the face of a person you’ve met, a coarse map of a location you’ve studied, a crude illustration from memory, or a vague representation of a live scene you have observed. You can make changes to the illusion each time you Sustain the spell.
+- **Lift** Slowly lift an unattended object of light Bulk or less 1 foot off the ground.
+- **Make** Create a temporary object of negligible Bulk, made of congealed magical substance. The object looks crude and artificial and is extremely fragile - it can’t be used as a tool, weapon, locus, or cost for a spell.
+- **Tidy** Color, clean, or soil an object of light Bulk or less. You can affect an object of 1 Bulk with 10 rounds of concentration, and a larger object with 1 minute per Bulk.
 
 Prestidigitation can’t deal damage or cause adverse conditions. Any actual change to an object (beyond what is noted above) persists only as long as you Sustain the spell
 
