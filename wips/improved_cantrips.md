@@ -103,7 +103,7 @@ Heightened (6th): The bonus increases to +3, and the spell can target up to 5 cr
 
 Source: Rage of Elements
 
->
+> Take Root is best understood as a defensive positioning spell. It gives a willing target a brief but meaningful anchor against shoves, trips, item theft, and falling, which makes it useful in tactical terrain without asking it to do the work of a stronger combat buff.
 
 ### **TREMOR SIGNS** ◆ | CANTRIP 1
 
