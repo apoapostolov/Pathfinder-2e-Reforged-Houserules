@@ -19,7 +19,7 @@ You push into the target’s mind and daze it with a mental jolt. The jolt deals
 
 Source: Player Core 1
 
-> Changed Daze from a poo-poo damage spell to a great single target control spell that synergizes with martials . On success, it now applies a 20% failure chance to actions (strikes, spells, and interactions) for one turn, with an option to remove the effect with a voluntary slowed 1 which matches the critical success effect. 20% is not much, but it can be dramatic when it happens and applies to multiple actions on target’s turn, and reactions before the target’s turn. Critical does not include the success effect because it overrides it - reactions cannot be used, and one action must be spent instead of voluntary spending. Because of this, damage remains extremely low (about 2-3 times worse than average cantrips by lowering the dice size and using slow heighten scalability) as a pure ribbon.
+> Daze now serves as a compact control cantrip rather than a pure damage option. On a success, it creates a meaningful but narrow disruption to the target’s turn, and on a critical success it escalates cleanly into a stronger denial effect. The damage stays intentionally modest so the spell remains a tactical opener or support tool instead of competing with dedicated damage cantrips.
 
 ### FROSTBITE ◆◆ | CANTRIP 1
 
@@ -32,7 +32,7 @@ An orb of biting cold coalesces around your target, freezing its body. The targe
 
 Source: Player Core 1
 
-> Frostbite is now the only far-distance damaging cantrip that delegates the damage to your allies, who must be equipped with bludgeoning weapons. A mix of up to three martial allies, all properly equipped, can take advantage of up to 3-4 attacks on average, and the extra damage from Frostbite can match the optimal Electric Arc. In addition, the cantrip matched the distance of Reach Spell + the best distance among other cantrips, making it a contender for casters before they invest in Reach Spell meta-magic or the only 120-foot cantrip when used with Reach Spell.
+> Frostbite is designed to reward coordinated play at range. Its damage is modest on its own, but it creates a reliable opening for allies equipped to exploit bludgeoning weakness. That gives the spell a distinct tactical identity and lets it compete with the best cantrip options without simply duplicating them.
 
 ### KNOW THE WAY ◆◆ | CANTRIP 1
 
@@ -44,7 +44,7 @@ Heightened (7th) You can choose a location you were at regardless of how long ag
 
 Source: Rage of Elements
 
-> As a low-usability information cantrip, Know the Way is improved with a +1 to +2 bonus to specific subset of skill checks. In a subtle addition, the spell lets you recognize when your current plane of existence has changed. This is useful when you have been secretly moved to a demi-plane or another plane of existence. Also, as a usability improvement at its highest heightening, the spell can become subtle and undetectable by hostile creatures.
+> Know the Way is intended to make navigation and location-based play more dependable without becoming a general-purpose divination tool. The bonus to Survival checks keeps the spell relevant in exploration, while the plane-recognition clause and subtle heightening give it practical value in campaigns with concealment, abduction, or planar travel.
 
 ### ROOT READING ◆◆ | CANTRIP 1
 
@@ -57,7 +57,7 @@ Heightened (7th): You learn of the presence of Small creatures. You learn if any
 
 Source: Rage of Elements
 
-> Root Reading is improved as a low-usability information cantrip with a +1 to +2 bonus to specific subset of skill checks. The highest heightening also provides detection of small creatures, which is a significant limitation given how often small hostile creatures may set ambush.  
+> Root Reading is meant to make environmental awareness feel concrete. It improves scouting and tracking in wooded terrain, and the higher-heightened version broadens its usefulness without removing the importance of careful exploration or active searching.
 
 ### PRESTIDIGITATION ◆◆ | CANTRIP 1
 
@@ -76,7 +76,7 @@ The simplest magic does your bidding. You can perform simple magical effects for
 
 Prestidigitation can’t deal damage or cause adverse conditions. Any actual change to an object (beyond what is noted above) persists only as long as you Sustain the spell
 
-> The problem with Prestidigitation is that the “quality of life” only apply to non-adventuring spellcaster only with very few niche and roleplay flavor uses that could come up during adventuring only if players want to play non-adventuring scenes. As such it can be seen as a “cantrip slot waste” by many. By adding few more uses that are actually useful but are not stepping on other existing spells or cantrip, and are significantly limited not to have spell-rank level of usability, the spell becomes very useful to adventuring spellcasters.
+> Prestidigitation benefits from a broader set of small, practical uses. The spell should remain light in scope and clearly below the impact of higher-rank magic, but it becomes much more satisfying when it can support adventuring play as well as everyday flavor.
 
 ### TIMBER ◆◆ | CANTRIP 1
 
@@ -88,7 +88,7 @@ You create a small dead tree in your space that falls over on anyone in its path
 
 Source: Rage of Elements
 
-> Changed dazzled, already covered by the improved Daze, to the much more impactful and thematic prone condition that the whole part can use, and martials can trigger Reactive Strike with it. Timber matches Electric Arc if the line can cover two targets, sometimes more dramatic use in dungeons 5-foot tunnels against more than two targets. Thus, I kept the damage down but improved the line length by one square, making capturing up to three or even four targets in near-perfect conditions more reliable.
+> Timber is meant to feel like a simple but forceful battlefield cantrip. Prone is a more tactically useful payoff than dazzled in this space, and the spell’s line geometry gives it a clear niche in tight environments where positioning matters.
 
 ### TAKE ROOT ◆ | CANTRIP 1
 
@@ -119,7 +119,7 @@ A creature that has tremorsense can feel the vibrations from this spell if the c
 
 Source: Rage of Elements
 
-> Matching the usability of the Message spell is very hard. Still, these changes create a tactically superior version of Message for communicating through walls and floors, such as communicating with a prisoner from outside the building. This compensates for the minimal nature of the message sent and the vague response limitation on the target. One tradition had to be removed to match Message, starting with the one with the most utility cantrips.
+> Tremor Signs is intended as a specialized communication tool rather than a broad replacement for Message. Its strength lies in bypassing ordinary barriers and supporting discreet coordination in underground or subterranean spaces, while still keeping the content of the exchange intentionally limited.
 
 ### VOID WARP ◆◆ | CANTRIP 1
 
@@ -132,4 +132,4 @@ You call upon the Void to harm life force. The target takes **2d6** void damage 
 
 Source: Player Core 1
 
-> I improved the DPR of Void Warp to match Vitality Lash. Depending on the campaign, Void Warp can be better than Vitality Lash, but most Paizo campaigns include a lot of undead.
+> Void Warp was adjusted to sit closer to the rest of the cantrip suite in damage output while preserving its clear thematic role. Its value will vary by campaign, but it should now feel like a competitive choice rather than an outlier.
