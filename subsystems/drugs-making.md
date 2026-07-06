@@ -107,6 +107,8 @@ When you Cook a drug, determine its final statistics as follows.
 - **Toxicity** Base Toxicity plus all Enhancer and Solution Toxicity modifiers.
 - **Traits** The union of all component tags. All finished drugs also gain the
   `drug` and `poison` traits. Most also have `alchemical` and `consumable`.
+- **Component Tags** When the same tag appears more than once, collapse it into
+  a count such as `Hallucinogen 2` rather than repeating the word.
 - **Saving Throw DC** Standard DC for the drug's final level, adjusted by
   Toxicity if desired: clean formulas often use `DC - 1`, ordinary formulas use
   the baseline DC, and brutal street formulas can use `DC + 1` or `DC + 2`.
@@ -543,7 +545,7 @@ Alchemical Consumable Drug Ingested Poison Stimulant
 **Formula** pesh + qat + calmleaf extract
 **Chain** `AA -> AX -> XX`
 **Formula Level** 2; **Toxicity** 4; **Addiction DC** 16; **Component Tags**
-Stimulant, Stimulant, Depressant
+Stimulant 2, Depressant
 
 Iron mercy is a bitter green paste wrapped in wax paper or packed into small
 pellets. Teamsters, enforcers, and desperate watchmen prize it for the way it
@@ -567,7 +569,7 @@ Alchemical Consumable Drug Ingested Poison Hallucinogen
 **Formula** crystal veil + shiver oil + blood dew
 **Chain** `BA -> AY -> YA`
 **Formula Level** 3; **Toxicity** 2; **Addiction DC** 18; **Component Tags**
-Hallucinogen, Hallucinogen
+Hallucinogen 2
 
 Velvet drop is sold in tiny glass phials and favored by courtesans, spies, and
 the sort of people who need to smile through dread. It fills the body with a
@@ -590,7 +592,7 @@ Alchemical Consumable Drug Ingested Poison Hallucinogen Magical
 **Formula** wyrmwood essence + malevolent fey flesh + blood dew
 **Chain** `AX -> XY -> YA`
 **Formula Level** 8; **Toxicity** 4; **Addiction DC** 25; **Component Tags**
-Hallucinogen, Hallucinogen, Magical, Illusion
+Hallucinogen 2, Magical, Illusion
 
 Witchlight syrup is dense, black, and threaded with prismatic sheen when held
 to a flame. Those who traffic in occult contraband whisper that it lets the
