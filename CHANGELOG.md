@@ -8,8 +8,8 @@ All notable updates to the houserules are recorded here.
   routes, merchants, stock, and long-distance trade.
 - Added the *Drugs Subsystem*, a fantasy chemistry and black-market trade
   system for creating, refining, and moving dangerous substances.
-- Reworked the project introduction so *Pathfinder 2e Reforged* reads as a
-  house-rule framework rather than just a file index.
+- Added the *Improved Cantrips* draft in `wips/` as a working spell reference
+  for the revised cantrip set.
 
 ## 2024-12-16
 
