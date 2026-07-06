@@ -33,6 +33,8 @@ maintain, and publish.
 
 - Subsystems
   - [Caravan Trade Subsystem](subsystems/caravans_of_golarion.md)
+  - [Drugs Subsystem](subsystems/drugs-making.md)
+
 - Appendix
   - [Pathfinder Arena](appendix/pathfinder-arena.md)
   - [PathHammer - Grim Survival Rules](appendix/pathhammer-grim-survival-rules.md)

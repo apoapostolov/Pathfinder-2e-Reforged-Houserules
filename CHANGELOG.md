@@ -10,6 +10,11 @@ All notable updates to the houserules are recorded here.
 - Expanded the caravan rules with perk progressions, VTT-ready budget formulas,
   stronger item-access guardrails, and trade friction that better matches both
   Pathfinder 2e balance and a high-magic caravan economy.
+- Added the *Drugs Subsystem* in `subsystems/drugs-making.md`, transcribed from
+  the Notion source into Markdown so the original rules, actions, tags, and
+  component table are preserved in repository form.
+- Cleaned up the drugs documentation so the Markdown uses consistent headings,
+  tag formatting, and table text while keeping the rules content intact.
 - Rewrote the project introduction so `README.md` presents *Pathfinder 2e
   Reforged* as Apostol Apostolov's house-rule framework rather than just a file
   index.
